@@ -4,7 +4,7 @@
 :root {
     --header-height: 3rem;
     /* Change favorite color */
-    --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 270; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
@@ -86,9 +86,8 @@ ul {
 }
 
 .container {
-    max-width: 768px;
-    /*max-width: 900px;*/
-    /*background: #d5d511;*/
+    max-width: 900px;
+
     margin: 0 24px;
 }
 
@@ -124,6 +123,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 16px;
 
 }
 
@@ -173,7 +173,6 @@ header {
 }
 
 
-
 .nav-list {
     justify-content: space-around;
 }
@@ -191,10 +190,13 @@ header {
 }
 
 
-
 .nav-toggle, .nav-logo {
     color: var(--title-color);
     font-weight: 600;
+}
+
+.nav-logo {
+    font-size: 1.2rem;
 }
 
 .nav-logo:hover {
@@ -360,10 +362,11 @@ header {
 }
 
 .about img {
-    width: 200px;
+    width: 300px;
     border-radius: 8px;
     justify-self: center;
     align-self: center;
+
 
 }
 
@@ -739,7 +742,23 @@ header {
     font-size: var(--small-font-size);
 
 }
+/*===========================================================*/
+/*===========================================================*/
+/*===========================================================*/
+.project-page-container {
+    margin: 7rem 8rem;
+}
+.project-img-container {
+    margin: 0 auto;
 
+    justify-content: center;
+    display: flex;
+}
+#project-img {
+    width: 60%;
+    height: 50vh;
+    object-fit: cover;
+}
 
 @media screen and (max-width: 350px) {
     .button-container {
@@ -852,9 +871,11 @@ header {
         flex-direction: row;
         justify-content: space-between;
         height: 4.5rem;
+        align-items: center;
     }
 
     .nav-menu {
+        align-items: center;
         max-width: 800px;
         /*justify-content: center;*/
         /*margin-right: 80px;*/
@@ -863,23 +884,23 @@ header {
         right: 0;
 
         box-shadow: none !important;
-
-        height: 4rem;
-
-    }
-
-    .nav-list {
+        background: transparent !important;
+        /*height: 4rem;*/
 
     }
+
 
 
     .nav-image {
         display: none;
     }
 
+    .home-content {
+
+    }
 
     .portfolio-container {
-        grid-gap: 0;
+
         grid-template-columns: repeat(3, max-content);
     }
 
@@ -888,7 +909,7 @@ header {
     }
 
     .home-blob {
-        width: 280px;
+        width: 380px;
         fill: var(--first-color);
     }
 

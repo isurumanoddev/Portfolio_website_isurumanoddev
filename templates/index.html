@@ -1,4 +1,5 @@
 {% extends "main.html" %}
+{% load static %}
 {% block content %}
 <body>
 
@@ -34,7 +35,7 @@
                                 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
                                 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
                             <image id="profile-img"
-                                   href="https://navbharattimes.indiatimes.com/photo/msid-88932301,imgsize-76816/pic.jpg"/>
+                                   href="{% static "photo_2023-05-13_09-45-43.jpg" %}"/>
                         </g>
                     </svg>
                 </div>
@@ -55,7 +56,7 @@
         <h2 class="section-title">About</h2>
         <span class="section-subtitle">My Introduction</span>
         <div class="about-container container">
-            <img src="https://navbharattimes.indiatimes.com/photo/msid-88932301,imgsize-76816/pic.jpg" alt=""
+            <img src="{% static "photo_2023-05-13_09-50-23.jpg" %}" alt=""
                  class="about-img">
             <div class="about-data">
                 <p class="about-description">Final year Bsc Software Engineering at Cardiff Metropolitan University</p>
@@ -251,150 +252,7 @@
     </section>
     <!--    =-============================Portfolio ========================-->
 
-    <section class="portfolio section" id="portfolio">
-        <h2 class="section-title">Portfolio</h2>
-        <span class="section-subtitle">Most recent Work</span>
-
-        <div class="portfolio-container container">
-
-            <div class="portfolio-content">
-                <img src="assets/img/portfolio1.jpg" class="project-img">
-                <div class="project-data">
-                    <h3 class="project-title">Ecommerce-website</h3>
-                    <p class="project-desc">These websites typically feature a catalog of products or services, as
-                        well
-                        as an online shopping cart and checkout system </p>
-                    <div class="button-container">
-                        <a href="" class="button button-flex project-button"> Show More<i
-                                class="uil uil-arrow-circle-right button-icon"></i></a>
-                        <a href="" class="button button-flex project-button">Github<i
-                                class="uil uil-github button-icon"></i> </a>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-content">
-                <img src="assets/img/portfolio2.jpg" class="project-img">
-                <div class="project-data">
-                    <h3 class="project-title">Ecommerce-website</h3>
-                    <p class="project-desc">These websites typically feature a catalog of products or services, as
-                        well
-                        as an online shopping cart and checkout system </p>
-                    <div class="button-container">
-                        <a href="" class="button button-flex project-button"> Show More<i
-                                class="uil uil-arrow-circle-right button-icon"></i></a>
-                        <a href="" class="button button-flex project-button">Github<i
-                                class="uil uil-github button-icon"></i> </a>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-content">
-                <img src="assets/img/portfolio3.jpg" class="project-img">
-                <div class="project-data">
-                    <h3 class="project-title">Ecommerce-website</h3>
-                    <p class="project-desc">These websites typically feature a catalog of products or services, as
-                        well
-                        as an online shopping cart and checkout system </p>
-                    <div class="button-container">
-                        <a href="" class="button button-flex project-button"> Show More<i
-                                class="uil uil-arrow-circle-right button-icon"></i></a>
-                        <a href="" class="button button-flex project-button">Github<i
-                                class="uil uil-github button-icon"></i> </a>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-content">
-                <img src="assets/img/portfolio1.jpg" class="project-img">
-                <div class="project-data">
-                    <h3 class="project-title">Ecommerce-website</h3>
-                    <p class="project-desc">These websites typically feature a catalog of products or services, as
-                        well
-                        as an online shopping cart and checkout system </p>
-                    <div class="button-container">
-                        <a href="" class="button button-flex project-button"> Show More<i
-                                class="uil uil-arrow-circle-right button-icon"></i></a>
-                        <a href="" class="button button-flex project-button">Github<i
-                                class="uil uil-github button-icon"></i> </a>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-content">
-                <img src="assets/img/portfolio2.jpg" class="project-img">
-                <div class="project-data">
-                    <h3 class="project-title">Ecommerce-website</h3>
-                    <p class="project-desc">These websites typically feature a catalog of products or services, as
-                        well
-                        as an online shopping cart and checkout system </p>
-                    <div class="button-container">
-                        <a href="" class="button button-flex project-button"> Show More<i
-                                class="uil uil-arrow-circle-right button-icon"></i></a>
-                        <a href="" class="button button-flex project-button">Github<i
-                                class="uil uil-github button-icon"></i> </a>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-content">
-                <img src="assets/img/portfolio3.jpg" class="project-img">
-                <div class="project-data">
-                    <h3 class="project-title">Ecommerce-website</h3>
-                    <p class="project-desc">These websites typically feature a catalog of products or services, as
-                        well
-                        as an online shopping cart and checkout system </p>
-                    <div class="button-container">
-                        <a href="" class="button button-flex project-button"> Show More<i
-                                class="uil uil-arrow-circle-right button-icon"></i></a>
-                        <a href="" class="button button-flex project-button">Github<i
-                                class="uil uil-github button-icon"></i> </a>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-content">
-                <img src="assets/img/portfolio1.jpg" class="project-img">
-                <div class="project-data">
-                    <h3 class="project-title">Ecommerce-website</h3>
-                    <p class="project-desc">These websites typically feature a catalog of products or services, as
-                        well
-                        as an online shopping cart and checkout system </p>
-                    <div class="button-container">
-                        <a href="" class="button button-flex project-button"> Show More<i
-                                class="uil uil-arrow-circle-right button-icon"></i></a>
-                        <a href="" class="button button-flex project-button">Github<i
-                                class="uil uil-github button-icon"></i> </a>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-content">
-                <img src="assets/img/portfolio2.jpg" class="project-img">
-                <div class="project-data">
-                    <h3 class="project-title">Ecommerce-website</h3>
-                    <p class="project-desc">These websites typically feature a catalog of products or services, as
-                        well
-                        as an online shopping cart and checkout system </p>
-                    <div class="button-container">
-                        <a href="" class="button button-flex project-button"> Show More<i
-                                class="uil uil-arrow-circle-right button-icon"></i></a>
-                        <a href="" class="button button-flex project-button">Github<i
-                                class="uil uil-github button-icon"></i> </a>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-content">
-                <img src="assets/img/portfolio3.jpg" class="project-img">
-                <div class="project-data">
-                    <h3 class="project-title">Ecommerce-website</h3>
-                    <p class="project-desc">These websites typically feature a catalog of products or services, as
-                        well
-                        as an online shopping cart and checkout system </p>
-                    <div class="button-container">
-                        <a href="" class="button button-flex project-button"> Show More<i
-                                class="uil uil-arrow-circle-right button-icon"></i></a>
-                        <a href="" class="button button-flex project-button">Github<i
-                                class="uil uil-github button-icon"></i> </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
+{% include "projects.html" %}
     <section class="service section">
 
         <div class="service-container container">
