@@ -6,7 +6,7 @@ class Projects(models.Model):
     title = models.CharField(max_length=200)
     thumbnail = models.ImageField(null=True,blank=True)
     body = models.CharField(max_length=200,null=True)
-    slug = models.SlugField(null=True)
+    project_description = RichTextField(null=True)
     created = models.DateTimeField(auto_now_add=True)
     github_link = models.URLField(null=True,blank=True)
 

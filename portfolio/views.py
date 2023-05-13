@@ -1,6 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 from portfolio.models import *
+from .forms import ProjectForm
 
 
 # Create your views here.
@@ -20,3 +21,31 @@ def project_page(request, pk):
     project = Projects.objects.get(id=pk)
     context = {"project": project}
     return render(request, "project_page.html", context)
+
+
+def create_project(request):
+    form = ProjectForm()
+    if request.method == "POST":
+        form = ProjectForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect("home")
+    context = {"form": form}
+    return render(request, "project_form.html", context)
+
+
+def edit_project(request, pk):
+    project = Projects.objects.get(id=pk)
+    form = ProjectForm(instance=project)
+    if request.method == "POST":
+        form = ProjectForm(request.POST, request.FILES, instance=project)
+        if form.is_valid():
+            form.save()
+            return redirect("home")
+    context = {"form": form}
+    return render(request, "project_form.html", context)
+
+
+def delete_project(request):
+    context = {}
+    return render(request, "project_form.html", context)

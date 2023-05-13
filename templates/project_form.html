@@ -1,0 +1,54 @@
+{% extends "main.html" %}
+{% load static %}
+
+{% block content %}
+
+    <section class="contact section">
+        <div class="project-form-container container">
+
+            <h1 class="section-title">Create New Project</h1>
+
+
+            <form method="POST" class="project-form" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.media }}
+                {% for field in form %}
+                    <div class="input-content">
+                        <label class="label">{{ field.label }}</label>
+                        {{ field }}
+                    </div>
+                {% endfor %}
+
+                {#                <div class="input-content">#}
+                {#                    <label class="label">Title</label>#}
+                {#                    <input name="title" type="text" class="input">#}
+                {#                </div>#}
+                {##}
+                {#                <div class="input-content">#}
+                {#                    <label class="label">Body</label>#}
+                {#                    <input name="body" type="text" class="input">#}
+                {#                </div>#}
+                {#                <div class="input-content">#}
+                {#                    <label class="label">Thumbnail</label>#}
+                {#                    <input name="thumbnail" type="image" class="input">#}
+                {#                </div>#}
+                {#                <div class="input-content">#}
+                {#                    <label class="label">Github link</label>#}
+                {#                    <input name="github_link" type="text" class="input">#}
+                {#                </div>#}
+                {#                <div class="input-content">#}
+                {#                    <label class="label">Slug</label>#}
+                {#                    <input name="slug" type="text" class="input">#}
+                {#                </div>#}
+
+
+                <input class="button-1" id="submit-btn" type="submit" value="Submit Project">
+            </form>
+
+
+        </div>
+    </section>
+
+
+
+{% endblock %}
