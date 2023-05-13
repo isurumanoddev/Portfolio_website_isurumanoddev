@@ -22,28 +22,29 @@
         <div class="nav-menu" id="nav-menu">
             <ul class="nav-list grid">
                 <li class="nav-item">
-                    <a href="#home" class="nav-link">
+                    <a href="{% url "home" %}" class="nav-link">
                         <i class="uil uil-estate nav-icon"></i>Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="#about" class="nav-link">
                         <i class="uil uil-file-info-alt nav-icon"></i>About</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">
-                        <i class="uil uil-brain nav-icon"></i>Skills</a>
-                </li>
+
                 <li class="nav-item">
                     <a href="{% url "projects" %}" class="nav-link">
                         <i class="uil uil-bag nav-icon"></i>Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="{% url "contact-form" %}" class="nav-link">
                         <i class="uil uil-message nav-icon"></i>Contact </a>
                 </li>
                 <li class="nav-item">
                     <a href="{% url "create-project" %}" class="nav-link">
                         <i class="uil uil-message nav-icon"></i>Add Project </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url "inbox" %}" class="nav-link">
+                        <i class="uil uil-message nav-icon"></i>Inbox </a>
                 </li>
 
 
@@ -67,5 +68,6 @@
 
 
 {% endblock %}
+
 </body>
 </html>

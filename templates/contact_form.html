@@ -1,0 +1,50 @@
+
+{% extends "main.html" %}
+{% load static %}
+
+{% block content %}
+    <section class="contact section" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <span class="section-subtitle">Get in touch</span>
+        <div class="contact-container container">
+            <div>
+                <div class="contact-info">
+                    <i class="uil uil-phone contact-icon"></i>
+                    <div>
+                        <h3 class="contact-title">Call Me</h3>
+                        <span class="contact-subtitle">076-3222186</span>
+                    </div>
+
+                </div>
+                <div class="contact-info">
+                    <i class="uil uil-phone contact-icon"></i>
+                    <div>
+                        <h3 class="contact-title">Email</h3>
+                        <span class="contact-subtitle">isurumanod99@gmail.com</span>
+                    </div>
+
+                </div>
+
+            </div>
+            <form method="POST" action="" class="contact-form">
+            {% csrf_token %}
+                <div class="contact-inputs">
+                    {% for field in form %}
+                    <div class="contact-content">
+                        <label class="label">{{ field.label }}</label>
+                        {{ field }}
+                    </div>
+                    {% endfor %}
+
+                    <div>
+                        <button type="submit" class="button button-flex">Cantact Me
+                            <i class="uil uil-message"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </section>
+{% endblock %}
+

@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 
 from portfolio.models import *
-from .forms import ProjectForm
+from .forms import *
 
 
 # Create your views here.
@@ -49,3 +49,20 @@ def edit_project(request, pk):
 def delete_project(request):
     context = {}
     return render(request, "project_form.html", context)
+
+
+def inbox(request):
+    messages = Messages.objects.all()
+    context = {"messages": messages}
+    return render(request, "inbox.html", context)
+
+
+def contact_form(request):
+    form = ContactForm()
+    if request.method == "POST":
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect("home")
+    context = {"form": form}
+    return render(request, "contact_form.html", context)

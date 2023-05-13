@@ -1,0 +1,44 @@
+{% extends "main.html" %}
+{% load static %}
+
+{% block content %}
+
+    <section class="contact section">
+        <div class="inbox-form-container">
+
+            <h1 class="section-title">My Messages</h1>
+            <table width="100%" class="inbox-table">
+                <thead>
+                <tr>
+
+                    <td class="inbox-name">name</td>
+                    <td class="inbox-email">email</td>
+                    <td class="inbox-Subject">Subject</td>
+                    <td class="inbox-body">body</td>
+                    <td class="inbox-read">read</td>
+                </tr>
+                </thead>
+                <tbody>
+                {% for message in  messages %}
+                    <tr class="table-row">
+
+                    <td class="inbox-name">{{ message.name }}</td>
+                    <td class="inbox-email">{{ message.email }}</td>
+                    <td class="inbox-Subject">{{ message.subject }}</td>
+                    <td class="inbox-body">{{ message.body }}</td>
+                    <td class="inbox-read">{{ message.is_read }}</td>
+
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+
+
+        </div>
+    </section>
+
+
+
+
+
+{% endblock %}
