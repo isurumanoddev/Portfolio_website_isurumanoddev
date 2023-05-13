@@ -1,57 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-
-</head>
+{% extends "main.html" %}
+{% block content %}
 <body>
-<header class="header" id="header">
-    <nav class="nav container">
-        <a href="#" class="nav-logo">Isuru</a>
-        <div class="nav-menu" id="nav-menu">
-            <ul class="nav-list grid">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">
-                        <i class="uil uil-estate nav-icon"></i>Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">
-                        <i class="uil uil-file-info-alt nav-icon"></i>About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">
-                        <i class="uil uil-brain nav-icon"></i>Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#portfolio" class="nav-link">
-                        <i class="uil uil-bag nav-icon"></i>Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="uil uil-message nav-icon"></i>Contact </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="uil uil-message nav-icon"></i>Contact </a>
-                </li>
 
-            </ul>
-            <i class="uil uil-multiply" id="nav-close"></i>
-
-        </div>
-        <div class="nav-btn">
-            <div class="nav-toggle" id="nav-toggle">
-                <i class="uil uil-apps"></i>
-            </div>
-        </div>
-    </nav>
-</header>
 
 <main class="main">
     <section class="home section" id="home">
@@ -566,8 +516,6 @@
     </div>
 </footer>
 
-<script src="script.js"></script>
 
-</body>
-</html>
+{% endblock content %}
 

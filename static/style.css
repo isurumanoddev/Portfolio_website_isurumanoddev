@@ -108,27 +108,93 @@ ul {
 
 /******************************************Nav******************* */
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     background: var(--body-color);
-    position: fixed;
-    z-index: 2;
-    bottom: 0;
-    left: 0;
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3)
+    z-index: 100;
+    transition: 0.4s;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 
 }
 
 .nav {
-    max-width: 100%;
+    height: 3rem;
     display: flex;
-    height: 48px;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+
 }
+
+.nav-image {
+    width: 32px;
+    border-radius: 50%;
+}
+
+.nav-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #faf7f7;
+    box-shadow: 0 -12px 12px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 4rem;
+    display: grid;
+    align-items: center;
+    border-radius: 1rem 1rem 0 0;
+    transition: 0.4s;
+    padding-bottom: 4rem;
+
+
+}
+
+.nav-list, .nav-link {
+    display: flex;
+
+}
+
+.nav-link {
+    flex-direction: column;
+    align-items: center;
+    /*row-gap: 0.25rem;*/
+    font-weight: 600;
+    font-size: 0.65rem;
+    color: black;
+    padding: 0;
+}
+
+.nav-list {
+    justify-content: space-around;
+}
+
+.nav-icon {
+    font-size: 1.2rem;
+}
+
+
+
+.nav-list {
+    justify-content: space-around;
+}
+
+.nav-icon {
+    display: none;
+}
+
+.nav-link {
+    font-size: 0.9rem;
+}
+
+.nav-link:hover {
+    color: var(--first-color);
+}
+
+
 
 .nav-toggle, .nav-logo {
     color: var(--title-color);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .nav-logo:hover {
@@ -152,14 +218,11 @@ header {
 
 .nav-list {
 
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
+
 }
 
 .nav-link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
 
 }
 
@@ -183,15 +246,7 @@ header {
 }
 
 .nav-menu {
-    position: fixed;
-    bottom: -100%;
-    left: 0;
-    width: 100%;
-    background: var(--body-color);
-    padding: 32px 24px 48px;
-    box-shadow: 1px 3px 1px 2px rgba(0, 0, 0, 0.1);
-    border-radius: 24px 24px 0 0;
-    right: 1.3rem;
+
 }
 
 .show-menu {
@@ -685,8 +740,8 @@ header {
 
 }
 
-/*==================================================*/
-@media (max-width: 350px) {
+
+@media screen and (max-width: 350px) {
     .button-container {
         display: flex;
         flex-direction: column;
@@ -709,6 +764,11 @@ header {
 
 
 @media (min-width: 568px) {
+
+    .nav-list {
+        justify-content: center;
+        column-gap: 3rem;
+    }
 
 
     .container {
@@ -740,6 +800,7 @@ header {
         grid-template-columns: 1fr 1fr;
         justify-content: space-between;
     }
+
     .institute-logo {
         /*background: red;*/
         margin-left: 100px;
@@ -773,45 +834,47 @@ header {
     .section {
         padding: 96px 0 32px;
     }
+
     .section-subtitle {
         margin-bottom: 64px;
     }
-    .header {
 
-        top: 0;
-        bottom: initial;
-        padding: 0 30px;
-
-
-    }
-
-    .nav-menu {
-        z-index: -1;
-        border-radius: 0;
-        padding: 0;
-        top:0 ;
-        bottom: initial;
-        margin-left: 200px;
-        background: #d5d511;
-    }
-    .nav-list {
-
-        display: flex;
-        column-gap: 32px;
-        align-items: center;
-        /*margin-left: 50px;*/
-
-    }
-    .nav {
-        /*align-items: center;*/
-    }
-    .nav-toggle,#nav-close,.nav-icon {
-        display: none;
-    }
 
     .container {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .nav {
+        width: 100%;
+        margin: 0 64px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 4.5rem;
+    }
+
+    .nav-menu {
+        max-width: 800px;
+        /*justify-content: center;*/
+        /*margin-right: 80px;*/
+        position: relative;
+        top: 0;
+        right: 0;
+
+        box-shadow: none !important;
+
+        height: 4rem;
+
+    }
+
+    .nav-list {
+
+    }
+
+
+    .nav-image {
+        display: none;
     }
 
 
@@ -819,27 +882,30 @@ header {
         grid-gap: 0;
         grid-template-columns: repeat(3, max-content);
     }
+
     .home-social-icon {
-    font-size: 32px;
-}
+        font-size: 32px;
+    }
+
     .home-blob {
-    width: 280px;
-    fill: var(--first-color);
-}
+        width: 280px;
+        fill: var(--first-color);
+    }
+
     #profile-img {
-    width: 250px;
-    object-fit: cover;
-}
+        width: 250px;
+        object-fit: cover;
+    }
+
     .home-description {
-    margin-bottom: 48px;
-}
+        margin-bottom: 48px;
+    }
 
     .about-description {
-     margin: 10px auto;
+        margin: 10px auto;
         max-width: 300px;
 
     }
-
 
 
 }
