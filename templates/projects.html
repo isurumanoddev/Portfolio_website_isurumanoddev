@@ -1,0 +1,30 @@
+{% extends "main.html" %}
+
+{% load static %}
+
+{% block content %}
+ <section class="portfolio section" id="portfolio">
+        <h2 class="section-title">Portfolio</h2>
+        <span class="section-subtitle">Most recent Work</span>
+
+        <div class="portfolio-container container">
+{% for project in projects %}
+            <div class="portfolio-content">
+                <img src="{{ project.imageURL }}" class="project-img">
+                <div class="project-data">
+                    <h3 class="project-title">{{ project.title }}</h3>
+                    <p class="project-desc">{{ project.body }}</p>
+                    <div class="button-container">
+                        <a href="{% url "project-page" project.id %}" class="button button-flex project-button"> Show More<i
+                                class="uil uil-arrow-circle-right button-icon"></i></a>
+                        <a href="{{ project.github_link }}" class="button button-flex project-button">Github<i
+                                class="uil uil-github button-icon"></i> </a>
+                    </div>
+                </div>
+            </div>
+ {% endfor %}
+        </div>
+
+    </section>
+{% endblock %}
+
