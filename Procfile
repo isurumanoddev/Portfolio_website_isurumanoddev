@@ -1,0 +1,1 @@
+web: gunicorn Portfolio_website_isurumanoddev.wsgi
