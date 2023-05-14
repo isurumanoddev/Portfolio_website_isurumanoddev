@@ -108,6 +108,9 @@ strong {
 
     /*background: red;*/
 }
+.credential {
+    color: #0000ee;
+}
 
 /******************************************Nav******************* */
 header {
@@ -516,10 +519,6 @@ header {
 
 }
 
-.qualification-calendar {
-    font-size: var(--smaller-font-size);
-
-}
 
 /*=========================portfolio==========================*/
 
@@ -918,23 +917,49 @@ header {
 
     .qualification-data {
 
-        align-items: starta;
+        /*align-items: start;*/
         grid-template-columns: 1fr 1fr;
         justify-content: space-between;
     }
 
     .institute-logo {
-        /*background: red;*/
-        margin-left: 100px;
+        display: flex;
+        justify-content: center;
+
     }
 
     .institute-logo img {
         display: block;
+        width: 150px;
+        height: 150px;
+
         /*background: yellow;*/
-        width: 60%;
+
+
+
+    }
+      .logo-certificate {
+        display: flex;
+        justify-content: center;
+
+    }
+      .logo-certificate img {
+        display: block;
+          width: 80px;
+        height: 80px;
+          border-radius: 0.35rem;
+        /*background: yellow;*/
+
+
 
     }
     .qualification-title{
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    .certificate-title {
+        font-weight: 600;
+        margin: 0 0 0.4rem 0;
         font-size: 1.2rem;
     }
     .qualification-subtitle {
@@ -942,7 +967,7 @@ header {
     }
     .qualification-data {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 3fr;
     }
 
     .qualification-container {
@@ -1049,6 +1074,10 @@ header {
     .institute-description {
         display: flex;
         flex-direction: column;
+    }
+    .certification {
+        margin: 0;
+        padding: 0;
     }
 
 
