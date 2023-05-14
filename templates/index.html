@@ -80,301 +80,306 @@
 
                 </div>
                 <div class="about-button">
-                    <a href="{% url 'generate-pdf' %}"  target="_blank" class="button button-flex">Download CV <i class="uil uil-import"></i></a>
+                    <a href="{% url 'generate-pdf' %}" target="_blank" class="button button-flex">Download CV <i
+                            class="uil uil-import"></i></a>
                 </div>
 
             </div>
         </section>
 
         <!--    Skills-->
-    <section class="skills" id="skills">
+        <section class="skills" id="skills">
 
-        <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+            <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
 
-        <div class="container">
+            <div class="container">
 
-            <div class="row" id="skillsContainer">
-                {% for skill in skills %}
-                    <div class="bar">
-                        <div class="info">
-                            <img src="{{ skill.logo_url }}"
-                                 alt="skill"/>
-                            <span class="skill-name-title">{{ skill.name }}</span>
+                <div class="row" id="skillsContainer">
+                    {% for skill in skills %}
+                        <div class="bar">
+                            <div class="info">
+                                <img src="{{ skill.logo_url }}"
+                                     alt="skill"/>
+                                <span class="skill-name-title">{{ skill.name }}</span>
+                            </div>
                         </div>
-                    </div>
-                {% endfor %}
-            </div>
+                    {% endfor %}
+                </div>
 
-        </div>
-    </section>
-{#        <section class="skills section" id="skills">#}
-{#            <h2 class="section-title">Skills</h2>#}
-{#            <span class="section-subtitle">My Technical Levels</span>#}
-{##}
-{#            <div class="skills-container container">#}
-{##}
-{#                <div class="skills-content">#}
-{#                    <div class="skills-header">#}
-{#                        <i class="uil uil-brackets-curly skill-icon"></i>#}
-{##}
-{#                        <div>#}
-{#                            <h1 class="skills-title">Frontend Developer</h1>#}
-{#                            <span class="skills-subtitle">More than 2 years</span>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="skills-list">#}
-{#                        <div class="skills-data">#}
-{#                            <div class="skill">#}
-{#                                <h3 class="skills-name ">HTML</h3>#}
-{#                                <span class="skills-number">90%</span>#}
-{#                            </div>#}
-{#                            <div class="skills-bar">#}
-{#                                <span class="skills-percentage " id="html"></span>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="skills-data">#}
-{#                            <div class="skill">#}
-{#                                <h3 class="skills-name">CSS</h3>#}
-{#                                <span class="skills-number">90%</span>#}
-{#                            </div>#}
-{#                            <div class="skills-bar">#}
-{#                                <span class="skills-percentage" id="css"></span>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="skills-data">#}
-{#                            <div class="skill">#}
-{#                                <h3 class="skills-name">JavaScript</h3>#}
-{#                                <span class="skills-number">70%</span>#}
-{#                            </div>#}
-{#                            <div class="skills-bar">#}
-{#                                <span class="skills-percentage" id="js"></span>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="skills-data">#}
-{#                            <div class="skill">#}
-{#                                <h3 class="skills-name">Bootstrap</h3>#}
-{#                                <span class="skills-number">80%</span>#}
-{#                            </div>#}
-{#                            <div class="skills-bar">#}
-{#                                <span class="skills-percentage" id="bt"></span>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#                <div class="skills-content">#}
-{#                    <div class="skills-header">#}
-{#                        <i class="uil uil-servers skill-icon"></i>#}
-{#                        <div>#}
-{#                            <h1 class="skills-title">Backend Developer</h1>#}
-{#                            <span class="skills-subtitle">More than 2 years</span>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="skills-list">#}
-{#                        <div class="skills-data">#}
-{#                            <div class="skill">#}
-{#                                <h3 class="skills-name">HTML</h3>#}
-{#                                <span class="skills-number">90%</span>#}
-{#                            </div>#}
-{#                            <div class="skills-bar">#}
-{#                                <span class="skills-percentage"></span>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="skills-data">#}
-{#                            <div class="skill">#}
-{#                                <h3 class="skills-name">JavaScript</h3>#}
-{#                                <span class="skills-number">90%</span>#}
-{#                            </div>#}
-{#                            <div class="skills-bar">#}
-{#                                <span class="skills-percentage"></span>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="skills-data">#}
-{#                            <div class="skill">#}
-{#                                <h3 class="skills-name">CSS</h3>#}
-{#                                <span class="skills-number">70%</span>#}
-{#                            </div>#}
-{#                            <div class="skills-bar">#}
-{#                                <span class="skills-percentage"></span>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="skills-data">#}
-{#                            <div class="skill">#}
-{#                                <h3 class="skills-name">Python</h3>#}
-{#                                <span class="skills-number">80%</span>#}
-{#                            </div>#}
-{#                            <div class="skills-bar">#}
-{#                                <span class="skills-percentage"></span>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{##}
-{#            </div>#}
-{##}
-{#        </section>#}
-{#{% include "skills.html" %}#}
+            </div>
+        </section>
+        {#        <section class="skills section" id="skills">#}
+        {#            <h2 class="section-title">Skills</h2>#}
+        {#            <span class="section-subtitle">My Technical Levels</span>#}
+        {##}
+        {#            <div class="skills-container container">#}
+        {##}
+        {#                <div class="skills-content">#}
+        {#                    <div class="skills-header">#}
+        {#                        <i class="uil uil-brackets-curly skill-icon"></i>#}
+        {##}
+        {#                        <div>#}
+        {#                            <h1 class="skills-title">Frontend Developer</h1>#}
+        {#                            <span class="skills-subtitle">More than 2 years</span>#}
+        {#                        </div>#}
+        {#                    </div>#}
+        {#                    <div class="skills-list">#}
+        {#                        <div class="skills-data">#}
+        {#                            <div class="skill">#}
+        {#                                <h3 class="skills-name ">HTML</h3>#}
+        {#                                <span class="skills-number">90%</span>#}
+        {#                            </div>#}
+        {#                            <div class="skills-bar">#}
+        {#                                <span class="skills-percentage " id="html"></span>#}
+        {#                            </div>#}
+        {#                        </div>#}
+        {#                        <div class="skills-data">#}
+        {#                            <div class="skill">#}
+        {#                                <h3 class="skills-name">CSS</h3>#}
+        {#                                <span class="skills-number">90%</span>#}
+        {#                            </div>#}
+        {#                            <div class="skills-bar">#}
+        {#                                <span class="skills-percentage" id="css"></span>#}
+        {#                            </div>#}
+        {#                        </div>#}
+        {#                        <div class="skills-data">#}
+        {#                            <div class="skill">#}
+        {#                                <h3 class="skills-name">JavaScript</h3>#}
+        {#                                <span class="skills-number">70%</span>#}
+        {#                            </div>#}
+        {#                            <div class="skills-bar">#}
+        {#                                <span class="skills-percentage" id="js"></span>#}
+        {#                            </div>#}
+        {#                        </div>#}
+        {#                        <div class="skills-data">#}
+        {#                            <div class="skill">#}
+        {#                                <h3 class="skills-name">Bootstrap</h3>#}
+        {#                                <span class="skills-number">80%</span>#}
+        {#                            </div>#}
+        {#                            <div class="skills-bar">#}
+        {#                                <span class="skills-percentage" id="bt"></span>#}
+        {#                            </div>#}
+        {#                        </div>#}
+        {#                    </div>#}
+        {#                </div>#}
+        {#                <div class="skills-content">#}
+        {#                    <div class="skills-header">#}
+        {#                        <i class="uil uil-servers skill-icon"></i>#}
+        {#                        <div>#}
+        {#                            <h1 class="skills-title">Backend Developer</h1>#}
+        {#                            <span class="skills-subtitle">More than 2 years</span>#}
+        {#                        </div>#}
+        {#                    </div>#}
+        {#                    <div class="skills-list">#}
+        {#                        <div class="skills-data">#}
+        {#                            <div class="skill">#}
+        {#                                <h3 class="skills-name">HTML</h3>#}
+        {#                                <span class="skills-number">90%</span>#}
+        {#                            </div>#}
+        {#                            <div class="skills-bar">#}
+        {#                                <span class="skills-percentage"></span>#}
+        {#                            </div>#}
+        {#                        </div>#}
+        {#                        <div class="skills-data">#}
+        {#                            <div class="skill">#}
+        {#                                <h3 class="skills-name">JavaScript</h3>#}
+        {#                                <span class="skills-number">90%</span>#}
+        {#                            </div>#}
+        {#                            <div class="skills-bar">#}
+        {#                                <span class="skills-percentage"></span>#}
+        {#                            </div>#}
+        {#                        </div>#}
+        {#                        <div class="skills-data">#}
+        {#                            <div class="skill">#}
+        {#                                <h3 class="skills-name">CSS</h3>#}
+        {#                                <span class="skills-number">70%</span>#}
+        {#                            </div>#}
+        {#                            <div class="skills-bar">#}
+        {#                                <span class="skills-percentage"></span>#}
+        {#                            </div>#}
+        {#                        </div>#}
+        {#                        <div class="skills-data">#}
+        {#                            <div class="skill">#}
+        {#                                <h3 class="skills-name">Python</h3>#}
+        {#                                <span class="skills-number">80%</span>#}
+        {#                            </div>#}
+        {#                            <div class="skills-bar">#}
+        {#                                <span class="skills-percentage"></span>#}
+        {#                            </div>#}
+        {#                        </div>#}
+        {#                    </div>#}
+        {#                </div>#}
+        {##}
+        {#            </div>#}
+        {##}
+        {#        </section>#}
+        {#{% include "skills.html" %}#}
 
         <!-- *************** Qualifications-->
         <section class="qualification section ">
-            <h2 class="section-title">Qualification</h2>
-            <span class="section-subtitle">My personal journey</span>
+            <div class="quali">
+                <h2 class="section-title">Qualification</h2>
+                <span class="section-subtitle">My personal journey</span>
 
-            <div class="qualification-container container ">
-                <div class="qualification-tabs">
-                    <div class="qualification-button qualification-title-1">
-                        <i class="uil uil-graduation-cap skill-icon"></i>Education
-                    </div>
-                </div>
-
-                <div class="qualification-sections">
-                    <div class="qualification-content">
-
-                        <div class="qualification-data">
-                            <div class="institute-logo">
-                                <img src="https://images.squarespace-cdn.com/content/v1/62726b549e95bf2087fc2759/1652779126184-FPZ49J1ITQZ7HXJRPOOF/Cardiff+Metropolitan+University.png"
-                                     alt="">
-                            </div>
-                            <div class="institute-description">
-                                <h3 class="qualification-title"><strong>Bsc Software Engineering</strong> (Reading) May
-                                    2023- May 2024</h3>
-                                <span class="qualification-subtitle"><strong>University : </strong>Cardiff Metropolitan University</span>
-
-
-                            </div>
-
-
+                <div class="qualification-container container ">
+                    <div class="qualification-tabs">
+                        <div class="qualification-button qualification-title-1">
+                            <i class="uil uil-graduation-cap skill-icon"></i>Education
                         </div>
-                        <div class="qualification-data">
-                            <div class="institute-logo">
-                                <img src="https://images.squarespace-cdn.com/content/v1/62726b549e95bf2087fc2759/1652779126184-FPZ49J1ITQZ7HXJRPOOF/Cardiff+Metropolitan+University.png"
-                                     alt="">
-                            </div>
-                            <div class="institute-description">
-                                <h3 class="qualification-title"><strong>Higher Diploma in Software Engineering</strong>
-                                    February 2021- February 2023</h3>
-                                <span class="qualification-subtitle"><strong>University : </strong>Cardiff Metropolitan University</span>
-                                <span class="qualification-subtitle"><strong>Grade : </strong>Cardiff Metropolitan University</span>
-                                <span class="qualification-subtitle"><strong>Modules : </strong>Object Oriented Programming, Data Structures & Algorithms, Databaseanagement Systems, Web Application Development, Service OrientedComputing ,Mobile Application Development , Project Management,Business Analytics</span>
-
-
-                            </div>
-                        </div>
-
                     </div>
 
-                </div>
+                    <div class="qualification-sections">
+                        <div class="qualification-content">
 
-                <div class="qualification-tabs">
-                    <div class="qualification-button qualification-title-1" id="qualification-title-1">
-                        <i class="uil uil-graduation-cap skill-icon"></i>Certifications
-                    </div>
-                </div>
-                <div class="qualification-sections">
-                    <div class="qualification-content">
+                            <div class="qualification-data">
+                                <div class="institute-logo">
+                                    <img src="https://images.squarespace-cdn.com/content/v1/62726b549e95bf2087fc2759/1652779126184-FPZ49J1ITQZ7HXJRPOOF/Cardiff+Metropolitan+University.png"
+                                         alt="">
+                                </div>
+                                <div class="institute-description">
+                                    <h3 class="qualification-title"><strong>Bsc Software Engineering</strong> (Reading)
+                                        May
+                                        2023- May 2024</h3>
+                                    <span class="qualification-subtitle"><strong>University : </strong>Cardiff Metropolitan University</span>
 
 
-                        <div class="qualification-data">
-                            <div class="logo-certificate">
-                                <img src="https://images.credly.com/images/4d81763c-b917-4ab9-92be-103af95c0a21/image.png"
-                                     alt="">
-                            </div>
-                            <div class="institute-description">
-                                <h3 class="certificate-title">Programming in Python</h3>
-                                <span class="qualification-subtitle certification">Meta Back-End Developer Professional Certificate</span>
-                                <a href="https://www.coursera.org/account/accomplishments/certificate/2NVS95BSRG3S"
-                                   class="qualification-subtitle credential">https://www.coursera.org/account/accomplishments/certificate/2NVS95BSRG3S</a>
+                                </div>
 
 
                             </div>
+                            <div class="qualification-data">
+                                <div class="institute-logo">
+                                    <img src="https://images.squarespace-cdn.com/content/v1/62726b549e95bf2087fc2759/1652779126184-FPZ49J1ITQZ7HXJRPOOF/Cardiff+Metropolitan+University.png"
+                                         alt="">
+                                </div>
+                                <div class="institute-description">
+                                    <h3 class="qualification-title"><strong>Higher Diploma in Software
+                                        Engineering</strong>
+                                        February 2021- February 2023</h3>
+                                    <span class="qualification-subtitle"><strong>University : </strong>Cardiff Metropolitan University</span>
+                                    <span class="qualification-subtitle"><strong>Grade : </strong>Cardiff Metropolitan University</span>
+                                    <span class="qualification-subtitle"><strong>Modules : </strong>Object Oriented Programming, Data Structures & Algorithms, Databaseanagement Systems, Web Application Development, Service OrientedComputing ,Mobile Application Development , Project Management,Business Analytics</span>
 
+
+                                </div>
+                            </div>
 
                         </div>
-                        <div class="qualification-data">
-                            <div class="logo-certificate">
-                                <img src="https://images.credly.com/images/4d81763c-b917-4ab9-92be-103af95c0a21/image.png"
-                                     alt="">
-                            </div>
-                            <div class="institute-description">
-                                <h3 class="certificate-title">Version Control</h3>
-                                <span class="qualification-subtitle certification">Meta Back-End Developer Professional Certificate</span>
-                                <a href="https://www.coursera.org/account/accomplishments/certificate/KHVR9DZYZ77J"
-                                   class="qualification-subtitle credential">https://www.coursera.org/account/accomplishments/certificate/KHVR9DZYZ77J</a>
-
-
-                            </div>
-
-
-                        </div>
-                        <div class="qualification-data">
-                            <div class="logo-certificate">
-                                <img src="https://images.credly.com/images/4d81763c-b917-4ab9-92be-103af95c0a21/image.png"
-                                     alt="">
-                            </div>
-                            <div class="institute-description">
-                                <h3 class="certificate-title">Introduction to Back-End Development</h3>
-                                <span class="qualification-subtitle certification">Meta Back-End Developer Professional Certificate</span>
-                                <a href="https://www.coursera.org/account/accomplishments/certificate/P5HEYXWF6K93"
-                                   class="qualification-subtitle credential">https://www.coursera.org/account/accomplishments/certificate/P5HEYXWF6K93</a>
-
-
-                            </div>
-
-
-                        </div>
-                        <div class="qualification-data">
-                            <div class="logo-certificate">
-                                <img src="https://images.credly.com/images/4d81763c-b917-4ab9-92be-103af95c0a21/image.png"
-                                     alt="">
-                            </div>
-                            <div class="institute-description">
-                                <h3 class="certificate-title">Django Web Framework</h3>
-                                <span class="qualification-subtitle certification">Meta Back-End Developer Professional Certificate</span>
-                                <a href="https://www.coursera.org/account/accomplishments/certificate/WKYMB5GSUSSY"
-                                   class="qualification-subtitle credential">https://www.coursera.org/account/accomplishments/certificate/WKYMB5GSUSSY</a>
-
-
-                            </div>
-
-
-                        </div>
-                        <div class="qualification-data">
-                            <div class="logo-certificate">
-                                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera.s3.amazonaws.com/media/coursera-rebrand-logo-square.png?auto=format%2Ccompress&dpr=1"
-                                     alt="">
-                            </div>
-                            <div class="institute-description">
-                                <h3 class="certificate-title">Crash Course on Python</h3>
-                                <span class="qualification-subtitle certification">Coursera</span>
-                                <a href="https://www.coursera.org/account/accomplishments/certificate/7WLVD5JY7X6F"
-                                   class="qualification-subtitle credential">https://www.coursera.org/account/accomplishments/certificate/7WLVD5JY7X6F</a>
-
-
-                            </div>
-
-
-                        </div>
-                        <div class="qualification-data">
-                            <div class="logo-certificate">
-                                <img src="https://images.credly.com/size/680x680/images/68c0b94d-f6ac-40b1-a0e0-921439eb092e/image.png"
-                                     alt="">
-                            </div>
-                            <div class="institute-description">
-                                <h3 class="certificate-title">Python Essentials 1</h3>
-                                <span class="qualification-subtitle certification">Cisco</span>
-                                <a href="https://www.credly.com/users/isuru-manod-senanayake/badges"
-                                   class="qualification-subtitle credential">https://www.credly.com/users/isuru-manod-senanayake/badges</a>
-
-
-                            </div>
-
-
-                        </div>
-
 
                     </div>
 
-                </div>
+                    <div class="qualification-tabs">
+                        <div class="qualification-button qualification-title-1" id="qualification-title-1">
+                            <i class="uil uil-graduation-cap skill-icon"></i>Certifications
+                        </div>
+                    </div>
+                    <div class="qualification-sections">
+                        <div class="qualification-content">
 
+
+                            <div class="qualification-data">
+                                <div class="logo-certificate">
+                                    <img src="https://images.credly.com/images/4d81763c-b917-4ab9-92be-103af95c0a21/image.png"
+                                         alt="">
+                                </div>
+                                <div class="institute-description">
+                                    <h3 class="certificate-title">Programming in Python</h3>
+                                    <span class="qualification-subtitle certification">Meta Back-End Developer Professional Certificate</span>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/2NVS95BSRG3S"
+                                       class="qualification-subtitle credential">https://www.coursera.org/account/accomplishments/certificate/2NVS95BSRG3S</a>
+
+
+                                </div>
+
+
+                            </div>
+                            <div class="qualification-data">
+                                <div class="logo-certificate">
+                                    <img src="https://images.credly.com/images/4d81763c-b917-4ab9-92be-103af95c0a21/image.png"
+                                         alt="">
+                                </div>
+                                <div class="institute-description">
+                                    <h3 class="certificate-title">Version Control</h3>
+                                    <span class="qualification-subtitle certification">Meta Back-End Developer Professional Certificate</span>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/KHVR9DZYZ77J"
+                                       class="qualification-subtitle credential">https://www.coursera.org/account/accomplishments/certificate/KHVR9DZYZ77J</a>
+
+
+                                </div>
+
+
+                            </div>
+                            <div class="qualification-data">
+                                <div class="logo-certificate">
+                                    <img src="https://images.credly.com/images/4d81763c-b917-4ab9-92be-103af95c0a21/image.png"
+                                         alt="">
+                                </div>
+                                <div class="institute-description">
+                                    <h3 class="certificate-title">Introduction to Back-End Development</h3>
+                                    <span class="qualification-subtitle certification">Meta Back-End Developer Professional Certificate</span>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/P5HEYXWF6K93"
+                                       class="qualification-subtitle credential">https://www.coursera.org/account/accomplishments/certificate/P5HEYXWF6K93</a>
+
+
+                                </div>
+
+
+                            </div>
+                            <div class="qualification-data">
+                                <div class="logo-certificate">
+                                    <img src="https://images.credly.com/images/4d81763c-b917-4ab9-92be-103af95c0a21/image.png"
+                                         alt="">
+                                </div>
+                                <div class="institute-description">
+                                    <h3 class="certificate-title">Django Web Framework</h3>
+                                    <span class="qualification-subtitle certification">Meta Back-End Developer Professional Certificate</span>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/WKYMB5GSUSSY"
+                                       class="qualification-subtitle credential">https://www.coursera.org/account/accomplishments/certificate/WKYMB5GSUSSY</a>
+
+
+                                </div>
+
+
+                            </div>
+                            <div class="qualification-data">
+                                <div class="logo-certificate">
+                                    <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera.s3.amazonaws.com/media/coursera-rebrand-logo-square.png?auto=format%2Ccompress&dpr=1"
+                                         alt="">
+                                </div>
+                                <div class="institute-description">
+                                    <h3 class="certificate-title">Crash Course on Python</h3>
+                                    <span class="qualification-subtitle certification">Coursera</span>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/7WLVD5JY7X6F"
+                                       class="qualification-subtitle credential">https://www.coursera.org/account/accomplishments/certificate/7WLVD5JY7X6F</a>
+
+
+                                </div>
+
+
+                            </div>
+                            <div class="qualification-data">
+                                <div class="logo-certificate">
+                                    <img src="https://images.credly.com/size/680x680/images/68c0b94d-f6ac-40b1-a0e0-921439eb092e/image.png"
+                                         alt="">
+                                </div>
+                                <div class="institute-description">
+                                    <h3 class="certificate-title">Python Essentials 1</h3>
+                                    <span class="qualification-subtitle certification">Cisco</span>
+                                    <a href="https://www.credly.com/users/isuru-manod-senanayake/badges"
+                                       class="qualification-subtitle credential">https://www.credly.com/users/isuru-manod-senanayake/badges</a>
+
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
 
         </section>
@@ -403,7 +408,8 @@
             </div>
             <div class="show-more-container">
 
-                <a id="down-arrow" href="{% url "projects" %}" class="button-1 show-more-button">Show More Projects . <i class="uil uil-arrow-circle-right"></i></a>
+                <a id="down-arrow" href="{% url "projects" %}" class="button-1 show-more-button">Show More Projects . <i
+                        class="uil uil-arrow-circle-right"></i></a>
             </div>
 
         </section>

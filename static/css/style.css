@@ -532,10 +532,31 @@ min-height: 90vh;
     display: grid;
     justify-content: center;
      color: #fff;
-}
 
-.qualification-tabs {
+}
+.quali {
+      background: rgba(0, 0, 22, 0.4);
+
+  color: #fff;
+ margin: 0!important;
+    padding: 0!important;
+
+  width: 100%;
+
+}
+.qualification-container {
     background: rgba(0, 0, 22, 0.4);
+    max-width: 1200px!important;
+
+  color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+}
+.qualification-tabs {
+    background: rgba(5, 5, 30, 0.4);
 
   color: #fff;
   border-radius: 1rem;
@@ -552,7 +573,7 @@ min-height: 90vh;
 
 .qualification-data {
     display: grid;
-    background: rgba(0, 0, 22, 0.4);
+    background: rgba(15, 15, 22, 0.4);
 
   color: #fff;
   border-radius: 1rem;
@@ -694,6 +715,7 @@ background: rgba(35,35, 32, 0.4);
 /*======================================== service ++++==============*/
 
 .service {
+
     background: var(--first-color);
     color: #fff;
     text-align: center;
@@ -734,7 +756,10 @@ background: rgba(35,35, 32, 0.4);
     display: grid;
     row-gap: 48px;
     justify-content: center;
-    background: rgba(0, 0, 22, 0.4);
+
+
+background: rgba(0, 0, 22, 0.4);
+    max-width: 1200px!important;
 
   color: #fff;
   border-radius: 1rem;
