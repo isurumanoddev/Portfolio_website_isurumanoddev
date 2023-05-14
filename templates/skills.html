@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    {#    <link rel="stylesheet" href="../static/css/skill_style.css">#}
+    <link rel="stylesheet" href="{% static "css/skill_style.css" %}">
+    <!-- Font Awesome -->
+
+</head>
+<body>
+{% block content %}
+    <!-- skills section starts -->
+    <section class="skills" id="skills">
+
+        <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+
+        <div class="container">
+
+            <div class="row" id="skillsContainer">
+                {% for skill in skills %}
+                    <div class="bar">
+                        <div class="info">
+                            <img src="{{ skill.logo_url }}"
+                                 alt="skill"/>
+                            <span>{{ skill.name }}</span>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
+    </section>
+    <!-- skills section ends -->
+
+
+
+
+
+
+    <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+{% endblock content %}
+
+
+</body>
+</html>

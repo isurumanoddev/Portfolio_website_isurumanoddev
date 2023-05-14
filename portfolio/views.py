@@ -48,6 +48,19 @@ def project_page(request, pk):
     context = {"project": project}
     return render(request, "project_page.html", context)
 
+def skills(request):
+    skills = Skills.objects.all()
+    context = {"skills": skills}
+    return render(request, "skills.html",context)
+def add_skill(request):
+    form = SkillForm()
+    if request.method == "POST":
+        form = SkillForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect("home")
+    context = {"form": form}
+    return render(request, "skills_form.html", context)
 
 def create_project(request):
     form = ProjectForm()

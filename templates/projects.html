@@ -15,9 +15,9 @@
                     <h3 class="project-title">{{ project.title }}</h3>
                     <p class="project-desc">{{ project.body }}</p>
                     <div class="button-container">
-                        <a href="{% url "project-page" project.id %}" class="button-1"> Show More<i
+                        <a href="#" class="button-2"> Show More<i
                                 class="uil uil-arrow-circle-right button-icon"></i></a>
-                        <a href="{{ project.github_link }}" class="button-1">Github<i
+                        <a href="{{ project.github_link }}" class="button-2">Github<i
                                 class="uil uil-github button-icon"></i> </a>
                     </div>
                 </div>
@@ -26,5 +26,6 @@
         </div>
 
     </section>
+
 {% endblock %}
 

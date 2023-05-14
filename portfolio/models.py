@@ -21,13 +21,13 @@ class Projects(models.Model):
         return url
 
 class Skills(models.Model):
-    title = models.CharField(max_length=200)
-    logo = models.ImageField(default="skkillogo.png",null=True, blank=True)
-    body = models.TextField(null=True)
-    created = models.DateTimeField(auto_now_add=True)
+    name = models.CharField(max_length=200)
+    logo_url = models.URLField(null=True,blank=True)
+
+
 
     def __str__(self):
-        return self.title
+        return self.name
 
     def imageURL(self):
         try:

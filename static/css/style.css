@@ -6,7 +6,7 @@
     /* Change favorite color */
     --hue-color: 270; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
-    --first-color: hsl(var(--hue-color), 69%, 61%);
+    --first-color: linear-gradient(to bottom, #57059e, #4a00e0);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
@@ -28,7 +28,7 @@
     --normal-font-size: 1rem;
     --small-font-size: 0.9rem;
     --smaller-font-size: .85rem;
-
+ background: linear-gradient(to bottom, #57059e, #4a00e0);
 }
 
 * {
@@ -789,7 +789,7 @@ header {
 }
 
 .footer-bg {
-    background: var(--first-color-second);
+    background: var(--first-color);
     padding: 32px 48px;
 }
 
