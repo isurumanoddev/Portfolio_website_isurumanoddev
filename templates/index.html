@@ -43,7 +43,8 @@
                     <div class="home-data item">
                         <h1 class="home-title">Hi, I am Isuru Manod</h1>
                         <h3 class="home-subtitle">Fullstack Developer</h3>
-                        <p class="home-description">Undergrate in Bsc Software Engineering Undergrate in Bsc Software EngineeringUndergrate in Bsc Software EngineeringUndergrate in Bsc Software Engineering</p>
+                        <p class="home-description">Undergrate in Bsc Software Engineering Undergrate in Bsc Software
+                            EngineeringUndergrate in Bsc Software EngineeringUndergrate in Bsc Software Engineering</p>
                         <a href="#contact" class="button button-flex">Contact Me <i class="uil uil-message"></i></a>
                     </div>
                 </div>
@@ -201,7 +202,7 @@
 
             <div class="qualification-container container ">
                 <div class="qualification-tabs">
-                    <div class="qualification-button qualification-title-1" >
+                    <div class="qualification-button qualification-title-1">
                         <i class="uil uil-graduation-cap skill-icon"></i>Education
                     </div>
                 </div>
@@ -360,7 +361,35 @@
         </section>
         <!--    =-============================Portfolio ========================-->
 
-        {% include "projects.html" %}
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section-title">Portfolio</h2>
+            <span class="section-subtitle">Most recent Work</span>
+
+            <div class="portfolio-container container">
+                {% for project in projects %}
+                    <div class="portfolio-content">
+                        <img src="{{ project.imageURL }}" class="project-img">
+                        <div class="project-data">
+                            <h3 class="project-title">{{ project.title }}</h3>
+                            <p class="project-desc">{{ project.body }}</p>
+                            <div class="button-container">
+                                <a href="{% url "project-page" project.id %}" class="button-1"> Show More<i
+                                        class="uil uil-arrow-circle-right button-icon"></i></a>
+                                <a href="{{ project.github_link }}" class="button-1">Github<i
+                                        class="uil uil-github button-icon"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="show-more-container">
+
+                <a id="down-arrow" href="{% url "projects" %}" class="button-1 show-more-button">Show More Projects . <i class="uil uil-arrow-circle-right"></i></a>
+            </div>
+
+        </section>
+
+
         <section class="service section">
 
             <div class="service-container container">
@@ -424,3 +453,4 @@
 
 {% endblock content %}
 
+</body>

@@ -6,7 +6,7 @@ from .forms import *
 
 # Create your views here.
 def home(request):
-    projects = Projects.objects.all()
+    projects = Projects.objects.all()[:6]
     form = ContactForm()
     if request.method == "POST":
         form = ContactForm(request.POST)

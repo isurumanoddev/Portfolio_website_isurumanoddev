@@ -535,21 +535,33 @@ header {
 .portfolio-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 100px;
+    grid-gap: 2rem;
+    margin: 0 1rem;
 }
 
 .portfolio-content {
-    max-width: 284px;
-    padding: 12px 24px;
-    /*background: #d5d511;*/
-    margin-bottom: 12px;
+
+    border: 0 solid #e2e8f0;
+    text-align: center;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #fafafa;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+
+}
+.portfolio-content:hover {
+
+      box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
 
 }
 
 .project-img {
-    width: 265px;
-    border-radius: 8px;
-    justify-self: center;
+     width: 100%;
+    height: 250px;
+
+    object-fit: cover;
+    transition: transform 0.5s ease;
 
 }
 
@@ -561,17 +573,31 @@ header {
 
 .project-desc {
     margin-bottom: 12px;
+    overflow: hidden;
+    height: 93px;
 
 }
 
 .button-container {
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 1rem;
 
 }
 
 .project-button {
     /*min-width: 110px;*/
+}
+.show-more-button {
+  background: var(--first-color) !important;
+}
+
+.show-more-button:hover {
+  background: var(--first-color-alt) !important;
+}
+.show-more-container {
+    text-align: center;
+    margin-top: 2rem;
 }
 
 /*======================================== service ++++==============*/
@@ -1103,6 +1129,14 @@ header {
         margin: 0;
         padding: 0;
     }
+    .portfolio-container {
+        max-width: 1000px;
+
+    grid-template-columns: repeat(3,1fr);
+
+
+}
+
 
 
 }
