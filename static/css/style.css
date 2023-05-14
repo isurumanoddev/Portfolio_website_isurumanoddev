@@ -596,7 +596,7 @@ min-height: 90vh;
 }
 
 #qualification-title-1 {
-    margin: 2rem 0;
+    margin: 0rem 0;
 }
 
 .qualification-subtitle {
@@ -626,15 +626,7 @@ min-height: 90vh;
     grid-template-columns: 1fr;
     grid-gap: 2rem;
 
-background: rgba(35,35, 32, 0.4);
 
-
-    color: #fff;
-    border-radius: 1rem;
-    padding: 2rem;
-    width: 90%;
-    margin: auto;
-    margin-top: 2rem;
 }
 
 .portfolio-content {
@@ -648,14 +640,14 @@ background: rgba(35,35, 32, 0.4);
     border-radius: 1rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     /*background: rgba(0, 0, 22, 0.9);*/
-    background: rgba(0, 0, 22, 0.4);
+    background: rgba(0, 0, 22, 0.3);
     transition: 0.2s;
 
 }
 
 .portfolio-content:hover {
     box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
-    background-color: rgba(0, 0, 0, 0.9) !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
 }
 
 .project-img {
@@ -668,8 +660,9 @@ background: rgba(35,35, 32, 0.4);
 }
 
 .project-title {
-    font-size: var(--h3-font-size);
+    font-size: 1.5rem;
     margin-bottom: 8px;
+    font-weight: 600;
     color: #fff0ff;
 
 }
@@ -693,7 +686,13 @@ background: rgba(35,35, 32, 0.4);
 }
 
 .show-more-button {
-    background: var(--first-color) !important;
+    /*background: var(--first-color) !important;*/
+    font-size: 1rem !important;
+    margin: 0 auto!important;
+    width: max-content!important;
+}
+.arrow-right {
+    font-size: 2rem;
 }
 
 .show-more-button:hover {
@@ -708,8 +707,9 @@ background: rgba(35,35, 32, 0.4);
 /*======================================== service ++++==============*/
 
 .service {
+min-height: 60vh;
+  background: linear-gradient(to bottom, #57059e, #4a00e0);
 
-    background: var(--first-color);
     color: #fff;
     text-align: center;
 
@@ -733,8 +733,17 @@ background: rgba(35,35, 32, 0.4);
 .service-data {
     display: grid;
     row-gap: 30px;
-    margin-bottom: 50px;
+
     text-align: center;
+  background: rgba(0, 0, 22, 0.4);
+
+  color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+
 }
 
 
@@ -779,14 +788,14 @@ background: rgba(0, 0, 22, 0.4);
 }
 
 .contact-title {
-    font-size: var(--h3-font-size);
+    font-size: 1.6rem;
     font-weight: 500;
 
 }
 
 .contact-subtitle {
-    font-size: var(--normal-font-size);
-    color: var(--text-color);
+    font-size: 1.3rem;
+    color: #f0fff0;
     font-weight: 700;
 }
 
@@ -794,14 +803,15 @@ background: rgba(0, 0, 22, 0.4);
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    background: var(--input-color);
+    background: rgba(30, 20, 22, 0.2);;
     border-radius: 8px;
     padding: 12px 16px;
     margin-bottom: 8px;
 }
 
 .input-content {
-    background: var(--input-color);
+
+
     border-radius: 8px;
     padding: 12px 16px;
     margin-bottom: 8px;
@@ -809,20 +819,25 @@ background: rgba(0, 0, 22, 0.4);
 
 .label {
     font-size: 1rem;
-    color: #2e3b4f;
+    color: #fff;
     font-weight: 600;
 
 
 }
 
 .input, .textarea {
+    border-bottom: 2px solid #fff0ff;
     width: 100%;
-    background: var(--body-color);
-    color: var(--text-color);
-    border: none;
+
+    color: #fff0ff;
+    background: transparent;
     outline: none;
-    font-size: var(--normal-font-size);
-    padding: 4px 8px;
+    font-size: 1.1rem;
+    padding: 8px 12px;
+    /*border-radius: 0.5rem;*/
+    border-left: none;
+    border-right: none;
+    border-top: none;
 }
 
 .project-form textarea {
@@ -882,7 +897,7 @@ background: rgba(0, 0, 22, 0.4);
 .footer {
 
 
-    padding-top: 32px;
+
 
 }
 
@@ -1116,14 +1131,14 @@ background: rgba(0, 0, 22, 0.4);
 
     .institute-logo {
         display: flex;
-        justify-content: center;
+        /*justify-content: center;*/
 
     }
 
     .institute-logo img {
         display: block;
-        width: 150px;
-        height: 150px;
+        width: 85%;
+        height: 90px;
 
         /*background: yellow;*/
 
@@ -1227,13 +1242,17 @@ background: rgba(0, 0, 22, 0.4);
     .nav-image {
         display: none;
     }
+.home {
+    height: 100vh;
 
+}
     .home-content {
 
     }
 
     .home-container {
-        max-width: 1000px;
+        max-width: 1200px !important;
+        padding-bottom: 6rem;
     }
 
     .home-social-icon {
