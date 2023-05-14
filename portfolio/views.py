@@ -7,7 +7,13 @@ from .forms import *
 # Create your views here.
 def home(request):
     projects = Projects.objects.all()
-    context = {"projects": projects}
+    form = ContactForm()
+    if request.method == "POST":
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect("home")
+    context = {"projects": projects,"form": form}
     return render(request, "index.html", context)
 
 

@@ -1,274 +1,317 @@
 {% extends "main.html" %}
 {% load static %}
 {% block content %}
-<body>
+    <body>
 
 
-<main class="main">
-    <section class="home section" id="home">
-        <div class="home-container container grid">
-            <div class="home-content grid">
-                <div class="home-social item">
-                    <a href="" class="home-social-icon">
-                        <i class="uil uil-github"></i>
-                    </a>
-                    <a href="" class="home-social-icon">
-                        <i class="uil uil-linkedin-alt"></i>
-                    </a>
-                    <a href="" class="home-social-icon">
-                        <i class="uil uil-twitter"></i>
-                    </a>
-                </div>
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home-container container grid">
+                <div class="home-content grid">
+                    <div class="home-social item">
+                        <a href="" class="home-social-icon">
+                            <i class="uil uil-github"></i>
+                        </a>
+                        <a href="" class="home-social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="" class="home-social-icon">
+                            <i class="uil uil-twitter"></i>
+                        </a>
+                    </div>
 
-                <div class="home-image item">
-                    <svg class="home-blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
-                         xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
+                    <div class="home-image item">
+                        <svg class="home-blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775
                                 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666
                                 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
                                 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
                                 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
                                 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                            <image id="profile-img"
-                                   href="{% static "photo_2023-05-13_09-45-43.jpg" %}"/>
-                        </g>
-                    </svg>
-                </div>
-
-                <div class="home-data item">
-                    <h1 class="home-title">Hi, I am Isuru Manod</h1>
-                    <h3 class="home-subtitle">Fullstack Developer</h3>
-                    <p class="home-description">Final year student in Bsc Software Engineering</p>
-                    <a href="#" class="button button-flex">Contact Me <i class="uil uil-message"></i></a>
-                </div>
-            </div>
-            <!--         Scroll-->
-        </div>
-
-    </section>
-    <!--    ================================About ===============================-->
-    <section class="about section" id="about">
-        <h2 class="section-title">About</h2>
-        <span class="section-subtitle">My Introduction</span>
-        <div class="about-container container">
-            <img src="{% static "photo_2023-05-13_09-50-23.jpg" %}" alt=""
-                 class="about-img">
-            <div class="about-data">
-                <p class="about-description">Final year Bsc Software Engineering at Cardiff Metropolitan University</p>
-                <div class="about-info">
-                    <div>
-                        <span class="about-info-title">2+</span>
-                        <span class="about-info-name">Years<br>Experience</span>
-                    </div>
-                    <div>
-                        <span class="about-info-title">15+</span>
-                        <span class="about-info-name">Completed<br>Projects</span>
+                                <image id="profile-img"
+                                       href="{% static "photo_2023-05-13_09-45-43.jpg" %}"/>
+                            </g>
+                        </svg>
                     </div>
 
-                </div>
-                <div class="about-button">
-                    <a href="" class="button button-flex">Download CV <i class="uil uil-import"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--    Skills-->
-
-    <section class="skills section" id="skills">
-        <h2 class="section-title">Skills</h2>
-        <span class="section-subtitle">My Technical Levels</span>
-
-        <div class="skills-container container">
-
-            <div class="skills-content">
-                <div class="skills-header">
-                    <i class="uil uil-brackets-curly skill-icon"></i>
-
-                    <div>
-                        <h1 class="skills-title">Frontend Developer</h1>
-                        <span class="skills-subtitle">More than 2 years</span>
+                    <div class="home-data item">
+                        <h1 class="home-title">Hi, I am Isuru Manod</h1>
+                        <h3 class="home-subtitle">Fullstack Developer</h3>
+                        <p class="home-description">Final year student in Bsc Software Engineering</p>
+                        <a href="#" class="button button-flex">Contact Me <i class="uil uil-message"></i></a>
                     </div>
                 </div>
-                <div class="skills-list">
-                    <div class="skills-data">
-                        <div class="skill">
-                            <h3 class="skills-name ">HTML</h3>
-                            <span class="skills-number">90%</span>
-                        </div>
-                        <div class="skills-bar">
-                            <span class="skills-percentage " id="html"></span>
-                        </div>
-                    </div>
-                    <div class="skills-data">
-                        <div class="skill">
-                            <h3 class="skills-name">CSS</h3>
-                            <span class="skills-number">90%</span>
-                        </div>
-                        <div class="skills-bar">
-                            <span class="skills-percentage" id="css"></span>
-                        </div>
-                    </div>
-                    <div class="skills-data">
-                        <div class="skill">
-                            <h3 class="skills-name">JavaScript</h3>
-                            <span class="skills-number">70%</span>
-                        </div>
-                        <div class="skills-bar">
-                            <span class="skills-percentage" id="js"></span>
-                        </div>
-                    </div>
-                    <div class="skills-data">
-                        <div class="skill">
-                            <h3 class="skills-name">Bootstrap</h3>
-                            <span class="skills-number">80%</span>
-                        </div>
-                        <div class="skills-bar">
-                            <span class="skills-percentage" id="bt"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="skills-content">
-                <div class="skills-header">
-                    <i class="uil uil-servers skill-icon"></i>
-                    <div>
-                        <h1 class="skills-title">Backend Developer</h1>
-                        <span class="skills-subtitle">More than 2 years</span>
-                    </div>
-                </div>
-                <div class="skills-list">
-                    <div class="skills-data">
-                        <div class="skill">
-                            <h3 class="skills-name">HTML</h3>
-                            <span class="skills-number">90%</span>
-                        </div>
-                        <div class="skills-bar">
-                            <span class="skills-percentage"></span>
-                        </div>
-                    </div>
-                    <div class="skills-data">
-                        <div class="skill">
-                            <h3 class="skills-name">JavaScript</h3>
-                            <span class="skills-number">90%</span>
-                        </div>
-                        <div class="skills-bar">
-                            <span class="skills-percentage"></span>
-                        </div>
-                    </div>
-                    <div class="skills-data">
-                        <div class="skill">
-                            <h3 class="skills-name">CSS</h3>
-                            <span class="skills-number">70%</span>
-                        </div>
-                        <div class="skills-bar">
-                            <span class="skills-percentage"></span>
-                        </div>
-                    </div>
-                    <div class="skills-data">
-                        <div class="skill">
-                            <h3 class="skills-name">Python</h3>
-                            <span class="skills-number">80%</span>
-                        </div>
-                        <div class="skills-bar">
-                            <span class="skills-percentage"></span>
-                        </div>
-                    </div>
-                </div>
+                <!--         Scroll-->
             </div>
 
-        </div>
+        </section>
+        <!--    ================================About ===============================-->
+        <section class="about section" id="about">
+            <h2 class="section-title">About</h2>
+            <span class="section-subtitle">My Introduction</span>
+            <div class="about-container container">
+{#                <img src="{% static "photo_2023-05-13_09-50-23.jpg" %}" alt="" class="about-img">#}
 
-    </section>
-
-
-    <!-- *************** Qualifications-->
-    <section class="qualification section ">
-        <h2 class="section-title">Qualification</h2>
-        <span class="section-subtitle">My personal journey</span>
-
-        <div class="qualification-container container ">
-            <div class="qualification-tabs">
-                <div class="qualification-button button-flex">
-                    <i class="uil uil-graduation-cap skill-icon"></i>Education
-                </div>
-            </div>
-
-            <div class="qualification-sections">
-                <div class="qualification-content">
-
-                    <div class="qualification-data">
-                        <div class="institute-logo">
-                            <img src="https://images.squarespace-cdn.com/content/v1/62726b549e95bf2087fc2759/1652779126184-FPZ49J1ITQZ7HXJRPOOF/Cardiff+Metropolitan+University.png"
-                                 alt="">
+                    <p class="about-description">Highly motivated, open-mined and detail-oriented undergraduate software
+                        engineer. An adaptable quick learner, a strong communicator and team player with a strong foundation
+                        in computer science principles and passion for problem-solving to make a meaningful
+                        contribution at a forward-thinking company. Skilled in developing efficient and intuitive
+                        solutions to complex problems, with experience in a variety of programming languages
+                        such as Python , Javascript , Java and technologies such as Django, NoSQL databases.
+                        Seeking to leverage my skills and knowledge to contribute to the success of a dynamic
+                        software development team
+                    </p>
+                    <div class="about-info">
+                        <div>
+                            <span class="about-info-title">2+</span>
+                            <span class="about-info-name">Years<br>Experience</span>
                         </div>
-                        <div class="institute-description">
-                            <h3 class="qualification-title">Bsc Software Engineering</h3>
-                            <span class="qualification-subtitle">Cardiff Metropolitan University</span>
-                            <div class="qualification-calendar">
-                                <i class="uil uil-calender">2023 - 2024</i>
+                        <div>
+                            <span class="about-info-title">15+</span>
+                            <span class="about-info-name">Completed<br>Projects</span>
+                        </div>
+
+                    </div>
+                    <div class="about-button">
+                        <a href="" class="button button-flex">Download CV <i class="uil uil-import"></i></a>
+                    </div>
+
+            </div>
+        </section>
+
+        <!--    Skills-->
+
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <span class="section-subtitle">My Technical Levels</span>
+
+            <div class="skills-container container">
+
+                <div class="skills-content">
+                    <div class="skills-header">
+                        <i class="uil uil-brackets-curly skill-icon"></i>
+
+                        <div>
+                            <h1 class="skills-title">Frontend Developer</h1>
+                            <span class="skills-subtitle">More than 2 years</span>
+                        </div>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skills-data">
+                            <div class="skill">
+                                <h3 class="skills-name ">HTML</h3>
+                                <span class="skills-number">90%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage " id="html"></span>
                             </div>
                         </div>
-                        <!--                        <div>-->
-                        <!--                            <span class="qualification-rounder"></span>-->
-                        <!--                            <span class="qualification-line"></span>-->
-                        <!--                        </div>-->
-
-                    </div>
-                    <div class="qualification-data">
-                        <div class="institute-logo">
-                            <img src="https://images.squarespace-cdn.com/content/v1/62726b549e95bf2087fc2759/1652779126184-FPZ49J1ITQZ7HXJRPOOF/Cardiff+Metropolitan+University.png"
-                                 alt="">
-                        </div>
-                        <div class="institute-description">
-                            <h3 class="qualification-title">Higher Diploma in Software Engineering </h3>
-                            <span class="qualification-subtitle">Cardiff Metropolitan University</span>
-                            <div class="qualification-calendar">
-                                <i class="uil uil-calender"> 2021 - 2023</i>
+                        <div class="skills-data">
+                            <div class="skill">
+                                <h3 class="skills-name">CSS</h3>
+                                <span class="skills-number">90%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" id="css"></span>
                             </div>
                         </div>
-                        <!--                        <div>-->
-                        <!--                            <span class="qualification-rounder"></span>-->
-                        <!--                            <span class="qualification-line"></span>-->
-                        <!--                        </div>-->
+                        <div class="skills-data">
+                            <div class="skill">
+                                <h3 class="skills-name">JavaScript</h3>
+                                <span class="skills-number">70%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" id="js"></span>
+                            </div>
+                        </div>
+                        <div class="skills-data">
+                            <div class="skill">
+                                <h3 class="skills-name">Bootstrap</h3>
+                                <span class="skills-number">80%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" id="bt"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-content">
+                    <div class="skills-header">
+                        <i class="uil uil-servers skill-icon"></i>
+                        <div>
+                            <h1 class="skills-title">Backend Developer</h1>
+                            <span class="skills-subtitle">More than 2 years</span>
+                        </div>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skills-data">
+                            <div class="skill">
+                                <h3 class="skills-name">HTML</h3>
+                                <span class="skills-number">90%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage"></span>
+                            </div>
+                        </div>
+                        <div class="skills-data">
+                            <div class="skill">
+                                <h3 class="skills-name">JavaScript</h3>
+                                <span class="skills-number">90%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage"></span>
+                            </div>
+                        </div>
+                        <div class="skills-data">
+                            <div class="skill">
+                                <h3 class="skills-name">CSS</h3>
+                                <span class="skills-number">70%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage"></span>
+                            </div>
+                        </div>
+                        <div class="skills-data">
+                            <div class="skill">
+                                <h3 class="skills-name">Python</h3>
+                                <span class="skills-number">80%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- *************** Qualifications-->
+        <section class="qualification section ">
+            <h2 class="section-title">Qualification</h2>
+            <span class="section-subtitle">My personal journey</span>
+
+            <div class="qualification-container container ">
+                <div class="qualification-tabs">
+                    <div class="qualification-button button-flex">
+                        <i class="uil uil-graduation-cap skill-icon"></i>Education
+                    </div>
+                </div>
+
+                <div class="qualification-sections">
+                    <div class="qualification-content">
+
+                        <div class="qualification-data">
+                            <div class="institute-logo">
+                                <img src="https://images.squarespace-cdn.com/content/v1/62726b549e95bf2087fc2759/1652779126184-FPZ49J1ITQZ7HXJRPOOF/Cardiff+Metropolitan+University.png"
+                                     alt="">
+                            </div>
+                            <div class="institute-description">
+                                <h3 class="qualification-title"><strong>Bsc Software Engineering</strong> (Reading) May
+                                    2023- May 2024</h3>
+                                <span class="qualification-subtitle"><strong>University : </strong>Cardiff Metropolitan University</span>
+
+
+                            </div>
+
+
+                        </div>
+                        <div class="qualification-data">
+                            <div class="institute-logo">
+                                <img src="https://images.squarespace-cdn.com/content/v1/62726b549e95bf2087fc2759/1652779126184-FPZ49J1ITQZ7HXJRPOOF/Cardiff+Metropolitan+University.png"
+                                     alt="">
+                            </div>
+                            <div class="institute-description">
+                                <h3 class="qualification-title"><strong>Higher Diploma in Software Engineering</strong>
+                                    February 2021- February 2023</h3>
+                                <span class="qualification-subtitle"><strong>University : </strong>Cardiff Metropolitan University</span>
+                                <span class="qualification-subtitle"><strong>Grade : </strong>Cardiff Metropolitan University</span>
+                                <span class="qualification-subtitle"><strong>Modules : </strong>Object Oriented Programming, Data Structures & Algorithms, Databaseanagement Systems, Web Application Development, Service OrientedComputing ,Mobile Application Development , Project Management,Business Analytics</span>
+
+
+                            </div>
+                        </div>
 
                     </div>
 
                 </div>
 
+                <!--            <div class="qualification-tabs">-->
+                <!--                <div class="qualification-button button-flex">-->
+                <!--                   <i class="uil uil-clipboard-alt"></i>Certificates-->
+                <!--                </div>-->
+                <!--            </div>-->
+            </div>
+        </section>
+        <!--    =-============================Portfolio ========================-->
+
+        {% include "projects.html" %}
+        <section class="service section">
+
+            <div class="service-container container">
+                <div class="service-data">
+                    <h2 class="service-title">You hava new Project</h2>
+                    <p class="service-description">Contact me now and get 50% discount</p>
+                    <div><a href="#contact" class="button-white ">Contact Me <i class="uil uil-message"></i></a></div>
+                </div>
             </div>
 
-            <!--            <div class="qualification-tabs">-->
-            <!--                <div class="qualification-button button-flex">-->
-            <!--                   <i class="uil uil-clipboard-alt"></i>Certificates-->
-            <!--                </div>-->
-            <!--            </div>-->
-        </div>
-    </section>
-    <!--    =-============================Portfolio ========================-->
+        </section>
 
-{% include "projects.html" %}
-    <section class="service section">
+        <!--    ++++++++++++++++++++++ Contact =================-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <span class="section-subtitle">Get in touch</span>
+            <div class="contact-container container">
+                <div>
+                    <div class="contact-info">
+                        <i class="uil uil-phone contact-icon"></i>
+                        <div>
+                            <h3 class="contact-title">Call Me</h3>
+                            <span class="contact-subtitle">+94766668809</span>
+                        </div>
 
-        <div class="service-container container">
-            <div class="service-data">
-                <h2 class="service-title">You hava new Project</h2>
-                <p class="service-description">Contact me now and get 50% discount</p>
-                <div><a href="#" class="button-white ">Contact Me <i class="uil uil-message"></i></a></div>
+                    </div>
+                    <div class="contact-info">
+                        <i class="uil uil-phone contact-icon"></i>
+                        <div>
+                            <h3 class="contact-title">Email</h3>
+                            <span class="contact-subtitle">isurumanod99@gmail.com</span>
+                        </div>
+
+                    </div>
+
+                </div>
+                <form method="POST" action="" class="contact-form">
+                    {% csrf_token %}
+                    <div class="contact-inputs">
+                        {% for field in form %}
+                            <div class="contact-content">
+                                <label class="label">{{ field.label }}</label>
+                                {{ field }}
+                            </div>
+                        {% endfor %}
+
+                        <div>
+                            <button type="submit" class="button button-flex">Cantact Me
+                                <i class="uil uil-message"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
             </div>
-        </div>
-
-    </section>
-
-    <!--    ++++++++++++++++++++++ Contact =================-->
-{% include "contact_form.html" %}
-{% include "footer.html" %}
-</main>
+        </section>
+        {% include "footer.html" %}
+    </main>
 
 
 
