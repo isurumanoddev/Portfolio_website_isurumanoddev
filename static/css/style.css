@@ -549,14 +549,14 @@ min-height: 90vh;
   margin-top: 2rem;
 }
 .qualification-tabs {
-    background: rgba(5, 5, 30, 0.5);
+
 
   color: #fff;
-  border-radius: 1rem;
+
   padding: 2rem;
-  width: 90%;
+
   margin: auto;
-  margin-top: 2rem;
+
     display: flex;
     justify-content: center;
     /*margin-bottom: 32px;*/
@@ -582,23 +582,18 @@ min-height: 90vh;
 }
 
 /********************************/
-.qualification-title {
-    font-size: var(--normal-font-size);
-    font-weight: 500;
 
+
+.qualification-heading {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
 }
-
-.qualification-title-1 {
-    font-size: 1.5rem;
-    font-weight: 600;
-
-
+.qualification-icon {
+    font-size: 2rem;
+    padding-left: 1rem;
 }
-
-#qualification-title-1 {
-    margin: 0rem 0;
-}
-
 .qualification-subtitle {
     font-size: var(--small-font-size);
     font-weight: 500;
@@ -844,7 +839,16 @@ background: rgba(0, 0, 22, 0.4);
     height: 60px;
 
 }
+.project-form {
+     background: rgba(0, 0, 22, 0.4);
 
+  color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+}
 .button-1 {
 
 

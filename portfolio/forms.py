@@ -38,5 +38,5 @@ class SkillForm(ModelForm):
     def __init__(self, *args, **kwargs):
         super(SkillForm,self).__init__(*args,**kwargs)
 
-        self.fields["name"].widget.attrs.update({'class':'form-control'})
-        self.fields["logo_url"].widget.attrs.update({'class':'form-control'})
+        self.fields["name"].widget.attrs.update({'class':'input'})
+        self.fields["logo_url"].widget.attrs.update({'class':'input'})
