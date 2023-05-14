@@ -511,6 +511,13 @@ header {
     font-weight: 500;
 
 }
+.qualification-title-1 {
+    font-size: var(--normal-font-size);
+    font-weight: 600;
+}
+#qualification-title-1 {
+    margin: 2rem 0;
+}
 
 .qualification-subtitle {
     font-size: var(--small-font-size);
