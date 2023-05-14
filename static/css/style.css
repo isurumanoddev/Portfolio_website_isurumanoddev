@@ -90,7 +90,7 @@ strong {
 }
 
 .container {
-    max-width: 900px;
+    max-width: 992px;
 
     margin: 0 24px;
 }
@@ -491,7 +491,7 @@ header {
 .qualification-tabs {
     display: flex;
     justify-content: center;
-    margin-bottom: 32px;
+    /*margin-bottom: 32px;*/
 
 
 }
@@ -512,8 +512,10 @@ header {
 
 }
 .qualification-title-1 {
-    font-size: var(--normal-font-size);
+    font-size:1.5rem ;
     font-weight: 600;
+
+
 }
 #qualification-title-1 {
     margin: 2rem 0;
@@ -1041,6 +1043,21 @@ header {
 
     .home-content {
 
+    }
+    .home-container {
+        max-width: 1000px;
+    }
+    .home-social-icon {
+        font-size: 2rem;
+    }
+    .home-title {
+        font-size: 2.5rem;
+    }
+    .home-subtitle {
+       font-size: 1.45rem;
+    }
+    .home-description {
+        font-size: 1rem;
     }
 
     .portfolio-container {
