@@ -870,7 +870,7 @@ header {
 }
 
 
-@media (min-width: 568px) {
+@media screen and (min-width: 568px) {
 
     .nav-list {
         justify-content: center;
@@ -937,7 +937,7 @@ header {
 
 }
 
-@media (min-width: 800px) {
+@media screen and (min-width: 800px) {
     .section {
         padding: 96px 0 32px;
     }
