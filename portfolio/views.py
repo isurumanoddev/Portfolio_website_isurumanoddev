@@ -27,13 +27,14 @@ class GeneratePDF(View):
 # Create your views here.
 def home(request):
     projects = Projects.objects.all()[:6]
+    skills = Skills.objects.all()
     form = ContactForm()
     if request.method == "POST":
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
             return redirect("home")
-    context = {"projects": projects, "form": form}
+    context = {"projects": projects, "form": form,"skills": skills}
     return render(request, "index.html", context)
 
 

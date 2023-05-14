@@ -54,7 +54,7 @@
         </section>
         <!--    ================================About ===============================-->
         <section class="about section" id="about">
-            <h2 class="section-title">About</h2>
+            <h2 class="heading">About</h2>
             <span class="section-subtitle">My Introduction</span>
             <div class="about-container container">
                 {#                <img src="{% static "photo_2023-05-13_09-50-23.jpg" %}" alt="" class="about-img">#}
@@ -87,7 +87,26 @@
         </section>
 
         <!--    Skills-->
+    <section class="skills" id="skills">
 
+        <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+
+        <div class="container">
+
+            <div class="row" id="skillsContainer">
+                {% for skill in skills %}
+                    <div class="bar">
+                        <div class="info">
+                            <img src="{{ skill.logo_url }}"
+                                 alt="skill"/>
+                            <span class="skill-name-title">{{ skill.name }}</span>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
+    </section>
 {#        <section class="skills section" id="skills">#}
 {#            <h2 class="section-title">Skills</h2>#}
 {#            <span class="section-subtitle">My Technical Levels</span>#}
@@ -197,7 +216,7 @@
 
         <!-- *************** Qualifications-->
         <section class="qualification section ">
-            <h2 class="section-title">Qualification</h2>
+            <h2 class="heading">Qualification</h2>
             <span class="section-subtitle">My personal journey</span>
 
             <div class="qualification-container container ">
@@ -362,7 +381,7 @@
         <!--    =-============================Portfolio ========================-->
 
         <section class="portfolio section" id="portfolio">
-            <h2 class="section-title">Portfolio</h2>
+            <h2 class="heading">Portfolio</h2>
             <span class="section-subtitle">Most recent Work</span>
 
             <div class="portfolio-container container">
