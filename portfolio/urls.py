@@ -1,6 +1,5 @@
 from django.urls import path
 from portfolio import views
-from .views import GeneratePDF
 
 urlpatterns = [
     path('', views.home, name="home"),
@@ -17,6 +16,6 @@ urlpatterns = [
     path('inbox/', views.inbox, name="inbox"),
     path('contact_form/', views.contact_form, name="contact-form"),
 
-    path('generate-pdf/', GeneratePDF.as_view(), name='generate-pdf'),
+
 
 ]
