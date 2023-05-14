@@ -86,8 +86,9 @@ strong {
 
 .section-subtitle {
     display: block;
-    font-size: 0.875rem;
+    font-size: 1.3rem;
     margin-bottom: 3rem;
+    color: #fff;
 }
 
 .section-subtitle, .section-title {
@@ -130,8 +131,7 @@ header {
     transition: 0.4s;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 
-  background: linear-gradient(to bottom, #57059e, #4a00e0);
-
+       background: #030338;
 
 }
 
@@ -224,6 +224,7 @@ header {
 
 .nav-logo {
     font-size: 1.5rem;
+    color: #fff;
 }
 
 .nav-logo:hover {
@@ -318,6 +319,7 @@ header {
 
 .home-social-icon {
     font-size: 24px;
+    color: #fff;
 }
 
 .home-social-icon:hover {
@@ -348,9 +350,9 @@ header {
 }
 
 .home-subtitle {
-    font-size: var(--h3-font-size);
-    color: var(--text-color);
-    font-weight: 500;
+    font-size: 1.7rem;
+    color: #fff;
+    font-weight: 700;
     margin-bottom: 12px;
 }
 
@@ -534,16 +536,7 @@ min-height: 90vh;
      color: #fff;
 
 }
-.quali {
-      background: rgba(0, 0, 22, 0.4);
 
-  color: #fff;
- margin: 0!important;
-    padding: 0!important;
-
-  width: 100%;
-
-}
 .qualification-container {
     background: rgba(0, 0, 22, 0.4);
     max-width: 1200px!important;
@@ -556,7 +549,7 @@ min-height: 90vh;
   margin-top: 2rem;
 }
 .qualification-tabs {
-    background: rgba(5, 5, 30, 0.4);
+    background: rgba(5, 5, 30, 0.5);
 
   color: #fff;
   border-radius: 1rem;
@@ -573,7 +566,7 @@ min-height: 90vh;
 
 .qualification-data {
     display: grid;
-    background: rgba(15, 15, 22, 0.4);
+    background: rgba(15, 15, 22, 0.2);
 
   color: #fff;
   border-radius: 1rem;
