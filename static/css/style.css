@@ -63,6 +63,7 @@ img {
 ul {
     list-style: none;
 }
+
 strong {
     font-weight: 600;
     color: #0E2231;
@@ -91,6 +92,7 @@ strong {
 
 .container {
     max-width: 992px;
+    /*max-width: 1202px;*/
 
     margin: 0 24px;
 }
@@ -108,6 +110,7 @@ strong {
 
     /*background: red;*/
 }
+
 .credential {
     color: #0000ee;
 }
@@ -144,7 +147,8 @@ header {
     bottom: 0;
     left: 0;
     background: #faf7f7;
-    box-shadow: 0 -12px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+
     width: 100%;
     height: 4rem;
     display: grid;
@@ -200,10 +204,11 @@ header {
 .nav-toggle, .nav-logo {
     color: var(--title-color);
     font-weight: 600;
+
 }
 
 .nav-logo {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .nav-logo:hover {
@@ -389,11 +394,13 @@ header {
     justify-content: space-evenly;
     margin-bottom: 40px;
 }
+
 .about-data {
     display: flex;
     flex-direction: column;
 
 }
+
 .about-info-title {
     font-size: var(--h2-font-size);
     font-weight: 500;
@@ -511,12 +518,14 @@ header {
     font-weight: 500;
 
 }
+
 .qualification-title-1 {
-    font-size:1.5rem ;
+    font-size: 1.5rem;
     font-weight: 600;
 
 
 }
+
 #qualification-title-1 {
     margin: 2rem 0;
 }
@@ -543,21 +552,22 @@ header {
 
     border: 0 solid #e2e8f0;
     text-align: center;
-    border-radius: 4px;
+    border-radius: 8px;
     overflow: hidden;
     background: #fafafa;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
 
 }
+
 .portfolio-content:hover {
 
-      box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
 
 }
 
 .project-img {
-     width: 100%;
+    width: 100%;
     height: 250px;
 
     object-fit: cover;
@@ -588,13 +598,15 @@ header {
 .project-button {
     /*min-width: 110px;*/
 }
+
 .show-more-button {
-  background: var(--first-color) !important;
+    background: var(--first-color) !important;
 }
 
 .show-more-button:hover {
-  background: var(--first-color-alt) !important;
+    background: var(--first-color-alt) !important;
 }
+
 .show-more-container {
     text-align: center;
     margin-top: 2rem;
@@ -725,7 +737,31 @@ header {
 }
 
 .button-1:hover {
-    background-color: #2e3b4f;
+    background-color: #33455b;
+}
+.button-2 {
+
+
+    font-size: 0.8rem;
+    padding:0 24px;
+    color: #ffffff;
+    background-color: #202b39;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: 0.1s;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.button-2:hover {
+    background-color: #33455b;
+}
+.button-icon {
+    font-size: 2rem;
 }
 
 .textarea {
@@ -849,53 +885,63 @@ header {
 .inbox-form-container {
     margin: 0 6rem 12rem;
 }
+
 .inbox-table {
     width: 100%;
     border-collapse: collapse;
     table-layout: fixed;
 }
+
 .inbox-table thead {
     border: 1px solid grey;
     border-left: none;
     border-right: none;
 
-}.inbox-table tr {
-     display: flex;
-     height: max-content;
-     gap: 1rem;
+}
 
- }
+.inbox-table tr {
+    display: flex;
+    height: max-content;
+    gap: 1rem;
+
+}
 
 .inbox-table tbody {
-   font-size: 0.65rem;
+    font-size: 0.65rem;
 
 
- }
+}
+
 .inbox-table tr {
-   display: flex;
-    height:max-content;
+    display: flex;
+    height: max-content;
     gap: 0.5rem;
 
 }
- .inbox-name {
-      width: 10%;
- }
- .inbox-email {
-     width: 15%;
-     text-align: start;
 
- }
- .inbox-read {
-     width: 5%;
- }
- .inbox-Subject {
+.inbox-name {
+    width: 10%;
+}
+
+.inbox-email {
+    width: 15%;
+    text-align: start;
+
+}
+
+.inbox-read {
+    width: 5%;
+}
+
+.inbox-Subject {
     width: 25%;
-     text-align: start;
- }
-  .inbox-body {
+    text-align: start;
+}
+
+.inbox-body {
     width: 45%;
-      text-align: start;
- }
+    text-align: start;
+}
 
 @media (max-width: 350px) {
     .button-container {
@@ -971,35 +1017,39 @@ header {
         /*background: yellow;*/
 
 
-
     }
-      .logo-certificate {
+
+    .logo-certificate {
         display: flex;
         justify-content: center;
 
     }
-      .logo-certificate img {
+
+    .logo-certificate img {
         display: block;
-          width: 80px;
+        width: 80px;
         height: 80px;
-          border-radius: 0.35rem;
+        border-radius: 0.35rem;
         /*background: yellow;*/
 
 
-
     }
-    .qualification-title{
+
+    .qualification-title {
         font-weight: 600;
         font-size: 1.2rem;
     }
+
     .certificate-title {
         font-weight: 600;
         margin: 0 0 0.4rem 0;
         font-size: 1.2rem;
     }
+
     .qualification-subtitle {
         font-size: 1rem;
     }
+
     .qualification-data {
         display: grid;
         grid-template-columns: 1fr 3fr;
@@ -1070,18 +1120,23 @@ header {
     .home-content {
 
     }
+
     .home-container {
         max-width: 1000px;
     }
+
     .home-social-icon {
         font-size: 2rem;
     }
+
     .home-title {
         font-size: 2.5rem;
     }
+
     .home-subtitle {
-       font-size: 1.45rem;
+        font-size: 1.45rem;
     }
+
     .home-description {
         font-size: 1rem;
     }
@@ -1114,29 +1169,33 @@ header {
         /*max-width: 300px;*/
 
     }
+
     .footer-main {
         gap: 20rem;
     }
+
     .contact-container {
         display: grid;
         grid-template-columns: 1fr 2fr;
     }
+
     .institute-description {
         display: flex;
         flex-direction: column;
     }
+
     .certification {
         margin: 0;
         padding: 0;
     }
+
     .portfolio-container {
-        max-width: 1000px;
+        max-width: 1200px !important;
 
-    grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
 
 
-}
-
+    }
 
 
 }

@@ -1,7 +1,27 @@
+import os
+
 from django.shortcuts import render, redirect
 
+from Portfolio_website_isurumanoddev import settings
 from portfolio.models import *
 from .forms import *
+
+from django.http import HttpResponse
+from django.views import View
+from reportlab.pdfgen import canvas
+
+
+class GeneratePDF(View):
+    def get(self, request):
+        file_name = 'a.pdf'
+        file_path = os.path.join(settings.MEDIA_ROOT, 'pdfs', file_name)
+
+        with open(file_path, 'rb') as pdf:
+            response = HttpResponse(pdf.read(), content_type='application/pdf')
+            response['Content-Disposition'] = 'attachment; filename="{}"'.format(file_name)
+        os.remove(file_path)  # Remove the temporary file.
+
+        return HttpResponse('Error generating PDF file.', status=400)
 
 
 # Create your views here.
@@ -13,7 +33,7 @@ def home(request):
         if form.is_valid():
             form.save()
             return redirect("home")
-    context = {"projects": projects,"form": form}
+    context = {"projects": projects, "form": form}
     return render(request, "index.html", context)
 
 
