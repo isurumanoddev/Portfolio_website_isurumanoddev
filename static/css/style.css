@@ -82,6 +82,7 @@ strong {
     color: #fff;
     font-weight: 800;
     text-align: center;
+
 }
 
 .section-subtitle {
@@ -100,6 +101,7 @@ strong {
     /*max-width: 1202px;*/
 
     margin: 0 24px;
+
 }
 
 .grid {
@@ -415,6 +417,7 @@ header {
 
 
 }
+
 
 .about-description {
     text-align: center;
@@ -803,6 +806,7 @@ header {
     width: 90%;
     margin: auto;
     margin-top: 2rem;
+    padding-bottom: 3rem;
     /*grid-template-columns: 1fr 1fr;*/
 }
 
@@ -985,13 +989,15 @@ header {
 }
 
 .footer-title {
-    font-size: var(--h1-font-size);
-    margin-bottom: 4px;
+   font-size: 2rem;
 
 }
 
 .footer-subtitle {
-    font-size: var(--normal-font-size);
+     font-size: 1.2rem;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 12px;
 
 }
 
@@ -1259,8 +1265,11 @@ header {
 }
 
 @media screen and (min-width: 800px) {
+    #home {
+        padding-top: 6.5rem;
+    }
     .section {
-        padding: 96px 0 32px;
+        padding: 48px 0 32px;
     }
 
     .section-subtitle {
@@ -1271,7 +1280,12 @@ header {
     .container {
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 4rem;
     }
+    .portfolio-container {
+        margin-bottom: 0;
+    }
+
 
     .nav {
         width: 100%;
