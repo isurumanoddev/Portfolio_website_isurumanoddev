@@ -137,6 +137,7 @@ strong {
     letter-spacing: 2px;
     cursor: pointer;
     text-transform: uppercase;
+    transition: 0.2s;
 }
 
 .glass-button:hover {
@@ -162,6 +163,7 @@ strong {
     letter-spacing: 2px;
     cursor: pointer;
     text-transform: uppercase;
+    transition: 0.2s;
 }
 
 .button-2:hover {
@@ -229,6 +231,7 @@ header {
     font-size: 0.65rem;
     color: #fff0ff;
     padding: 0;
+    transition: 0.15s;
 }
 
 .nav-list {
@@ -253,7 +256,7 @@ header {
 }
 
 .nav-link:hover {
-    color: var(--first-color);
+    color: rgb(105, 42, 227); ;
 }
 
 
@@ -326,7 +329,8 @@ header {
 
 .home {
     min-height: 90vh;
-    background: linear-gradient(to bottom, #57059e, #4a00e0);
+    /*background: linear-gradient(to bottom, #57059e, #4a00e0);*/
+    background: linear-gradient(to left, #57059e, #4a00e0);
 }
 
 /* *********************************Home *************************/
@@ -408,7 +412,7 @@ header {
 /*======================= About ============================*/
 .about {
     min-height: 90vh;
-    background: linear-gradient(to bottom, #57059e, #4a00e0);
+    background: linear-gradient(to left, #57059e, #4a00e0);
     color: #fff0ff;
 }
 
@@ -548,7 +552,7 @@ header {
 
 .qualification {
     min-height: 90vh;
-    background: linear-gradient(to bottom, #57059e, #4a00e0);
+    background: linear-gradient(to left, #57059e, #4a00e0);
     display: grid;
     justify-content: center;
     color: #fff;
@@ -623,6 +627,9 @@ header {
 .institute-logo img {
     display: none;
 }
+.logo-certificate img {
+    display: none;
+}
 
 /********************************/
 
@@ -690,7 +697,7 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     /*background: rgba(0, 0, 22, 0.9);*/
     background: rgba(0, 0, 22, 0.3);
-    transition: 0.2s;
+    transition: 0.3s;
 
 }
 
@@ -755,6 +762,7 @@ header {
     letter-spacing: 2px;
     cursor: pointer;
     text-transform: uppercase;
+    transition: 0.4s;
 }
 .show-more-button:hover {
     background-color: rgba(255, 255, 255, 0.1)!important;
@@ -776,7 +784,7 @@ header {
 
 .service {
     min-height: 60vh;
-    background: linear-gradient(to bottom, #57059e, #4a00e0);
+    background: linear-gradient(to top, #57059e, #4a00e0);
 
     color: #fff;
     text-align: center;
@@ -827,7 +835,7 @@ header {
 /*=============================contact================================*/
 .contact {
     min-height: 90vh;
-    background: linear-gradient(to bottom, #57059e, #4a00e0);
+    background: linear-gradient(to top, #57059e, #4a00e0);
 
 }
 
@@ -999,7 +1007,7 @@ header {
 }
 
 .footer-bg {
-    background: var(--first-color);
+    background: linear-gradient(to top, #57059e, #4a00e0);;
     padding: 32px 48px;
 }
 
@@ -1071,7 +1079,79 @@ header {
     font-size: var(--small-font-size);
 
 }
+.skills {
+        min-height: 90vh;
+        background: linear-gradient(to left, #57059e, #4a00e0);
+    }
 
+    .skills h2 {
+        color: #fff;
+    }
+
+    .skills .heading span {
+        color: rgb(255, 230, 0);
+    }
+
+    .skills .container {
+        background: rgba(0, 0, 22, 0.4);
+
+        color: #fff;
+        border-radius: 1rem;
+        padding: 2rem;
+        width: 90%;
+        margin: auto;
+        margin-top: 2rem;
+    }
+
+    .skills .container .row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .skills .container .bar {
+        margin-bottom: 15px;
+        padding: 10px;
+        min-width: 135px;
+        border-radius: 1rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        background: rgba(0, 0, 22, 0.9);
+        transition: 0.2s;
+    }
+
+    .skills .container .bar:hover {
+        box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
+        background-color: rgba(0, 0, 0, 0.9) !important;
+
+    }
+
+    .skills .container .bar .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .skills .container .bar .info i {
+        font-size: 4rem;
+    }
+
+    .skills .container .bar .info img {
+        transition: 0.3s;
+    }
+
+    .skills .container .bar .info img:hover {
+        transform: scale(1.2);
+    }
+
+    .skills .container .bar .info span {
+        font-size: 1.5rem;
+        font-weight: 500;
+        font-family: "Poppins";
+        margin-left: 0.5rem;
+    }
 /*===========================================================*/
 /*===========================================================*/
 /*===========================================================*/
@@ -1270,7 +1350,7 @@ header {
         grid-template-columns: 1fr 2fr;
     }
 
-    .skills-container, .contact-container, .portfolio-container {
+     .contact-container, .portfolio-container {
         grid-gap: 20px;
         grid-template-columns:1fr 1fr;
     }
@@ -1278,6 +1358,11 @@ header {
     .footer-main {
         grid-template-columns: 1fr 1fr;
         grid-gap: 80px;
+    }
+    .skills .container .row {
+
+        grid-template-columns: repeat(6, 1fr);
+
     }
 
 
@@ -1443,78 +1528,11 @@ header {
 
 
     /* skills section starts */
-    .skills {
-        min-height: 90vh;
-        background: linear-gradient(to bottom, #57059e, #4a00e0);
-    }
-
-    .skills h2 {
-        color: #fff;
-    }
-
-    .skills .heading span {
-        color: rgb(255, 230, 0);
-    }
-
-    .skills .container {
-        background: rgba(0, 0, 22, 0.4);
-
-        color: #fff;
-        border-radius: 1rem;
-        padding: 2rem;
-        width: 90%;
-        margin: auto;
-        margin-top: 2rem;
-    }
-
     .skills .container .row {
-        display: grid;
+
         grid-template-columns: repeat(6, 1fr);
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-
-    .skills .container .bar {
-        margin-bottom: 15px;
-        padding: 10px;
-        min-width: 135px;
-        border-radius: 1rem;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        background: rgba(0, 0, 22, 0.9);
-        transition: 0.2s;
-    }
-
-    .skills .container .bar:hover {
-        box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
-        background-color: rgba(0, 0, 0, 0.9) !important;
 
     }
 
-    .skills .container .bar .info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        margin-top: 1rem;
-    }
-
-    .skills .container .bar .info i {
-        font-size: 4rem;
-    }
-
-    .skills .container .bar .info img {
-        transition: 0.3s;
-    }
-
-    .skills .container .bar .info img:hover {
-        transform: scale(1.2);
-    }
-
-    .skills .container .bar .info span {
-        font-size: 1.5rem;
-        font-weight: 500;
-        font-family: "Poppins";
-        margin-left: 0.5rem;
-    }
 
 }
