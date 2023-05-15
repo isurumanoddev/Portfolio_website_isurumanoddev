@@ -539,6 +539,10 @@ header {
 #html, #css, #js, #bt {
     width: 90%;
 }
+.skil-img {
+    width: 48px;
+    height: 48px;
+}
 
 /*=======================qualification*/
 

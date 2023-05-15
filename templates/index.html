@@ -2,8 +2,6 @@
 {% load static %}
 {% block content %}
     <body>
-
-
     <main class="main">
         <section class="home section" id="home">
             <div class="home-container container grid">
@@ -99,7 +97,7 @@
                     {% for skill in skills %}
                         <div class="bar">
                             <div class="info">
-                                <img src="{{ skill.logo_url }}"
+                                <img class="skil-img" src="{{ skill.logo_url }}"
                                      alt="skill"/>
                                 <span class="skill-name-title">{{ skill.name }}</span>
                             </div>
