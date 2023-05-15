@@ -752,7 +752,9 @@ header {
     cursor: pointer;
     text-transform: uppercase;
 }
-
+.show-more-button:hover {
+    background-color: rgba(255, 255, 255, 0.1)!important;
+}
 .arrow-right {
     font-size: 2rem;
 }
