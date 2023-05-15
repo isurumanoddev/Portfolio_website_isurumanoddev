@@ -623,10 +623,13 @@ header {
 }
 
 #qualification-title-1 {
-    font-size: 2.2rem !important;
+    padding-top: 1rem;
+    font-size: 2.5rem !important;
     font-weight: 800;
 }
-
+#qualification-icon {
+    font-size: 2.5rem;
+}
 
 /*=========================portfolio==========================*/
 .portfolio-title {
