@@ -117,7 +117,40 @@ strong {
 
     /*background: red;*/
 }
+#message-container {
 
+   display: none;
+
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, #57059e, #4a00e0);
+    /*background: red;*/
+    justify-content: center;
+    font-size: 3.5rem;
+    margin: 0 auto;
+    z-index: 10;
+
+    color: #fdfff0;
+}
+#message {
+    justify-self: center;
+}
+.fade-in {
+        animation: fade-out 3s ease-out;
+    }
+
+    @keyframes fade-out {
+
+        100% {
+            opacity: 1;
+        }
+        0% {
+            opacity: 0;
+        }
+    }
 .credential {
     color: #d0c90b;
 }
