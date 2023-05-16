@@ -8,7 +8,7 @@ from .forms import *
 
 from django.http import HttpResponse
 from django.views import View
-
+import json
 
 
 
@@ -86,6 +86,8 @@ def inbox(request):
 
 
 def contact_form(request):
+    data = json.loads(request.body)
+    print(data)
     form = ContactForm()
     if request.method == "POST":
         form = ContactForm(request.POST)

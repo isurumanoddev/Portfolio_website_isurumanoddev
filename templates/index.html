@@ -356,7 +356,7 @@
                     </div>
 
                 </div>
-                <form method="POST" action="" class="contact-form" onsubmit="displayMessage(event)">
+                <form method="POST" action="" class="contact-form" onclick="displayMessage(event)">
                     {% csrf_token %}
 
                     <div class="contact-inputs">
@@ -369,7 +369,7 @@
                         {% endfor %}
 
                         <div>
-                            <button type="submit" class="glass-button">Cantact Me
+                            <button type="submit" class="glass-button" >Cantact Me
                                 <i class="uil uil-message"></i>
                             </button>
                         </div>
@@ -386,30 +386,71 @@
 
 
 
+    {#    <script>#}
+    {#        function displayMessage(event) {#}
+    {##}
+    {#            console.log(event)#}
+    {#            // Display the message container#}
+    {#            const messageContainer = document.getElementById("message-container");#}
+    {#            messageContainer.style.display = "block";#}
+    {##}
+    {#            // Apply the fade-in effect#}
+    {#            messageContainer.classList.add("fade-in");#}
+    {##}
+    {#            // Wait for 2 seconds and then apply the fade-out effect#}
+    {#            setTimeout(function () {#}
+    {#                messageContainer.classList.remove("fade-in");#}
+    {#                messageContainer.classList.add("fade-out");#}
+    {##}
+    {#            }, 2000);#}
+    {#            setTimeout(function () {#}
+    {#                messageContainer.classList.remove("fade-out");#}
+    {#                messageContainer.classList.remove("fade-in");#}
+    {##}
+    {##}
+    {#            }, 3000);#}
+    {##}
+    {##}
+    {##}
+    {#            // Reload the page after 4 seconds#}
+    {##}
+    {#        }#}
+    {#    </script>#}
     <script>
         function displayMessage(event) {
-            event.preventDefault(); // Prevent form submission
-
-            // Display the message container
-            const messageContainer = document.getElementById("message-container");
-            messageContainer.style.display = "block";
-
-            // Apply the fade-in effect
-            {#messageContainer.classList.add("fade-in");#}
-
-            // Wait for 2 seconds and then apply the fade-out effect
-            setTimeout(function () {
-                messageContainer.classList.remove("fade-in");
-                messageContainer.classList.add("fade-out");
-                 window.location.reload();
-            }, 3000);
+            event.preventDefault();
+            const formElement = document.querySelector('.contact-form');
 
 
-            // Reload the page after 4 seconds
+            const formData = new FormData(formElement);
 
+            const url = "/contact_form/"
+
+
+
+
+            fetch(url, {
+                method: 'POST',
+                body: JSON.stringify(formData)
+            })
+                .then(response => {
+                    // Handle the response from the backend
+                    if (response.ok) {
+                        // Display a success message or perform any other actions
+                        document.getElementById('message').textContent = 'Form submitted successfully.';
+                    } else {
+                        // Display an error message or perform any other actions
+                        document.getElementById('message').textContent = 'Form submission failed.';
+                    }
+                })
+                .catch(error => {
+                    // Handle any error that occurred during the fetch request
+                    document.getElementById('message').textContent = 'An error occurred.';
+                    console.error(error);
+                });
         }
-    </script>
 
+    </script>
 
 
 
