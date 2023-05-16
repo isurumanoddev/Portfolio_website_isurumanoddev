@@ -117,9 +117,10 @@ strong {
 
     /*background: red;*/
 }
+
 #message-container {
 
-   display: none;
+    display: none;
 
     position: fixed;
     text-align: center;
@@ -138,34 +139,63 @@ strong {
 
     color: #fdfff0;
 }
+
 #message {
     justify-self: center;
 }
+
 .fade-in {
-        animation: fade-in 1s ease-in;
-    }
+    animation: fade-in 1s ease-in;
+}
 
-    .fade-out {
-        animation: fade-out 1s ease-out;
-    }
+.fade-out {
+    animation: fade-out 1s ease-out;
+}
 
-    @keyframes fade-in {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
+@keyframes fade-in {
+    0% {
+        opacity: 0;
     }
+    100% {
+        opacity: 1;
+    }
+}
 
-    @keyframes fade-out {
-        0% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-        }
+@keyframes fade-out {
+    0% {
+        opacity: 1;
     }
+    100% {
+        opacity: 0;
+    }
+}
+
+#user-container {
+
+    display: flex;
+    gap: 2rem;
+        font-size: 1rem;
+
+    position: fixed;
+    text-align: center;
+    top: 4.5rem;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 22, 0.9);
+
+    justify-content: center;
+    margin: 0 auto;
+    z-index: 10;
+    font-weight: 600;
+    height: 2rem;
+    padding: 0.5rem;
+
+
+    color: #fdfff0;
+}
+#user-container {
+
+}
 .credential {
     color: #d0c90b;
 }
@@ -217,10 +247,12 @@ strong {
 .button-2:hover {
     background-color: rgba(255, 255, 255, 0.35);
 }
+
 main {
     margin: 0;
 
 }
+
 /******************************************Nav******************* */
 header {
     position: fixed;
@@ -1243,6 +1275,7 @@ header {
 /*====================*/
 .inbox-form-container {
     margin: 0 6rem 12rem;
+    color: #fff0ff;
 }
 
 .inbox-table {

@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-        <script>
+    <script>
         const user = "{{ request.user }}"
 
         function getToken(name) {
@@ -61,20 +61,6 @@
                     <a href="#contact" class="nav-link">
                         <i class="uil uil-message nav-icon"></i>Contact </a>
                 </li>
-                {% if request.user.is_authenticated %}
-                    <li class="nav-item">
-                        <a href="{% url "create-project" %}" class="nav-link">
-                            <i class="uil uil-message nav-icon"></i>Add Project </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{% url "add-skill" %}" class="nav-link">
-                            <i class="uil uil-message nav-icon"></i>Add Skill </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{% url "inbox" %}" class="nav-link">
-                            <i class="uil uil-message nav-icon"></i>Inbox </a>
-                    </li>
-                {% endif %}
 
 
             </ul>
@@ -85,6 +71,22 @@
         <img src="https://avatars.githubusercontent.com/u/111575402?s=96&v=4" class="nav-image">
     </nav>
 </header>
+<div id="user-container">
+    {% if request.user.is_authenticated %}
+
+        <a href="{% url "create-project" %}" class="nav-link">
+            <i class="uil uil-message nav-icon"></i>Project </a>
+
+
+        <a href="{% url "add-skill" %}" class="nav-link">
+            <i class="uil uil-message nav-icon"></i>Skill </a>
+
+
+        <a href="{% url "inbox" %}" class="nav-link">
+            <i class="uil uil-message nav-icon"></i>Inbox </a>
+
+    {% endif %}
+</div>
 
 
 
