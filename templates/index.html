@@ -79,8 +79,8 @@
 
                 </div>
                 <div class="about-button">
-                    <a href="#" target="_blank" class="glass-button">Download CV <i
-                            class="uil uil-import"></i></a>
+                    <button  class="glass-button" onclick="downloadCV()">Download CV <i
+                            class="uil uil-import"></i></button>
                 </div>
 
             </div>
@@ -487,7 +487,6 @@
                 }, 3000);
 
 
-
             })
         }
 
@@ -508,6 +507,21 @@
                 messageContainer.classList.add("fade-out");
 
             }, 2000);
+        }
+    </script>
+    <script>
+        function downloadCV() {
+            var downloadUrl = 'https://drive.google.com/uc?export=download&id=11FzI5kMjslizgvJmRgdGuonbMGF-_UBq'; // Replace with the actual Google Drive file download link
+
+            // Create a temporary anchor element
+            var link = document.createElement('a');
+            link.href = downloadUrl;
+
+            // Set the file name for the download
+            link.download = 'cv.pdf'; // Replace 'cv.pdf' with the desired file name
+
+            // Simulate a click event to trigger the download
+            link.click();
         }
     </script>
 
