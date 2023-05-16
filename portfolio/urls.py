@@ -14,7 +14,7 @@ urlpatterns = [
     path('delete_project/<str:pk>/', views.delete_project, name="delete-project"),
 
     path('inbox/', views.inbox, name="inbox"),
-    path('contact_form/', views.contact_form, name="contact-form"),
+    path('contact_form/', views.process_message, name="contact-form"),
 
 
 
