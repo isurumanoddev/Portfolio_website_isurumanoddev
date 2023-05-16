@@ -169,7 +169,10 @@ strong {
 .button-2:hover {
     background-color: rgba(255, 255, 255, 0.35);
 }
+main {
+    margin: 0;
 
+}
 /******************************************Nav******************* */
 header {
     position: fixed;
@@ -204,7 +207,7 @@ header {
     position: fixed;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 22, 0.4);
+    background: #030338;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
 
     width: 100%;
@@ -256,7 +259,7 @@ header {
 }
 
 .nav-link:hover {
-    color: rgb(105, 42, 227); ;
+    color: rgb(105, 42, 227);;
 }
 
 
@@ -543,6 +546,7 @@ header {
 #html, #css, #js, #bt {
     width: 90%;
 }
+
 .skil-img {
     width: 48px;
     height: 48px;
@@ -599,6 +603,16 @@ header {
 
 .certification-container {
     padding-bottom: 4rem;
+
+}
+
+.certification-content {
+
+}
+
+.institute-description {
+    display: flex;
+    flex-direction: column;
 }
 
 .qualification-content {
@@ -616,6 +630,7 @@ header {
     margin: auto;
     margin-top: 2rem;
     transition: 0.3s;
+    overflow: hidden;
 
 }
 
@@ -627,6 +642,7 @@ header {
 .institute-logo img {
     display: none;
 }
+
 .logo-certificate img {
     display: none;
 }
@@ -709,7 +725,7 @@ header {
 .project-img {
     width: 100%;
     height: 250px;
-
+    border-radius: 8px 8px 0 0;
     object-fit: cover;
     transition: transform 0.5s ease;
 
@@ -748,7 +764,6 @@ header {
     width: max-content !important;
 
 
-
     padding: 4px 24px;
     border: 0;
     text-decoration: none;
@@ -764,9 +779,11 @@ header {
     text-transform: uppercase;
     transition: 0.4s;
 }
+
 .show-more-button:hover {
-    background-color: rgba(255, 255, 255, 0.1)!important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
 }
+
 .arrow-right {
     font-size: 2rem;
 }
@@ -1079,79 +1096,81 @@ header {
     font-size: var(--small-font-size);
 
 }
+
 .skills {
-        min-height: 90vh;
-        background: linear-gradient(to left, #57059e, #4a00e0);
-    }
+    min-height: 90vh;
+    background: linear-gradient(to left, #57059e, #4a00e0);
+}
 
-    .skills h2 {
-        color: #fff;
-    }
+.skills h2 {
+    color: #fff;
+}
 
-    .skills .heading span {
-        color: rgb(255, 230, 0);
-    }
+.skills .heading span {
+    color: rgb(255, 230, 0);
+}
 
-    .skills .container {
-        background: rgba(0, 0, 22, 0.4);
+.skills .container {
+    background: rgba(0, 0, 22, 0.4);
 
-        color: #fff;
-        border-radius: 1rem;
-        padding: 2rem;
-        width: 90%;
-        margin: auto;
-        margin-top: 2rem;
-    }
+    color: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+}
 
-    .skills .container .row {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
+.skills .container .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
 
-    .skills .container .bar {
-        margin-bottom: 15px;
-        padding: 10px;
-        min-width: 135px;
-        border-radius: 1rem;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        background: rgba(0, 0, 22, 0.9);
-        transition: 0.2s;
-    }
+.skills .container .bar {
+    margin-bottom: 15px;
+    padding: 10px;
+    min-width: 135px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 22, 0.9);
+    transition: 0.2s;
+}
 
-    .skills .container .bar:hover {
-        box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
-        background-color: rgba(0, 0, 0, 0.9) !important;
+.skills .container .bar:hover {
+    box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
+    background-color: rgba(0, 0, 0, 0.9) !important;
 
-    }
+}
 
-    .skills .container .bar .info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        margin-top: 1rem;
-    }
+.skills .container .bar .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
 
-    .skills .container .bar .info i {
-        font-size: 4rem;
-    }
+.skills .container .bar .info i {
+    font-size: 4rem;
+}
 
-    .skills .container .bar .info img {
-        transition: 0.3s;
-    }
+.skills .container .bar .info img {
+    transition: 0.3s;
+}
 
-    .skills .container .bar .info img:hover {
-        transform: scale(1.2);
-    }
+.skills .container .bar .info img:hover {
+    transform: scale(1.2);
+}
 
-    .skills .container .bar .info span {
-        font-size: 1.5rem;
-        font-weight: 500;
-        font-family: "Poppins";
-        margin-left: 0.5rem;
-    }
+.skills .container .bar .info span {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "Poppins";
+    margin-left: 0.5rem;
+}
+
 /*===========================================================*/
 /*===========================================================*/
 /*===========================================================*/
@@ -1235,11 +1254,12 @@ header {
     text-align: start;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 450px) {
     .button-container {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        /*justify-content: space-evenly;*/
+        gap: 0.8rem;
 
     }
 
@@ -1251,6 +1271,12 @@ header {
     .container {
         margin-left: 16px;
         margin-right: 16px;
+    }
+
+    .skills .container .row {
+
+        grid-template-columns: repeat(2, 1fr);
+
     }
 
 
@@ -1266,8 +1292,7 @@ header {
 
 
     .container {
-        /*margin-left: auto;*/
-        /*margin-right: auto;*/
+        margin: 0 32px;
     }
 
     .home-content {
@@ -1310,21 +1335,6 @@ header {
 
     }
 
-    .logo-certificate {
-        display: flex;
-        /*justify-content: center;*/
-
-    }
-
-    .logo-certificate img {
-        display: block;
-        width: 80px;
-        height: 80px;
-        border-radius: 0.35rem;
-        /*background: yellow;*/
-
-
-    }
 
     .qualification-title {
         font-weight: 600;
@@ -1350,18 +1360,18 @@ header {
         grid-template-columns: 1fr 2fr;
     }
 
-     .contact-container, .portfolio-container {
-        grid-gap: 20px;
-        grid-template-columns:1fr 1fr;
-    }
-
+    /* .contact-container, .portfolio-container {*/
+    /*    grid-gap: 20px;*/
+    /*    grid-template-columns:1fr 1fr;*/
+    /*}*/
     .footer-main {
         grid-template-columns: 1fr 1fr;
         grid-gap: 80px;
     }
+
     .skills .container .row {
 
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(3, 1fr);
 
     }
 
@@ -1383,8 +1393,8 @@ header {
 
 
     .container {
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 32px;
+        margin-right: 32px;
         margin-bottom: 4rem;
     }
 
@@ -1435,6 +1445,8 @@ header {
     .home-container {
         max-width: 1200px !important;
         padding-bottom: 6rem;
+
+
     }
 
     .home-social-icon {
@@ -1491,10 +1503,6 @@ header {
         grid-template-columns: 1fr 2fr;
     }
 
-    .institute-description {
-        display: flex;
-        flex-direction: column;
-    }
 
     .certification {
         margin: 0;
@@ -1504,7 +1512,7 @@ header {
     .portfolio-container {
         max-width: 1200px !important;
 
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
 
 
     }
@@ -1528,11 +1536,57 @@ header {
 
 
     /* skills section starts */
+
+
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        margin: 0 32px;
+    }
+
+    .skills .container .row {
+
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
+    .logo-certificate {
+        display: flex;
+        /*justify-content: center;*/
+
+    }
+
+    .logo-certificate img {
+        display: block;
+        width: 80px;
+        height: 80px;
+        border-radius: 0.35rem;
+        /*background: yellow;*/
+
+
+    }
+
+
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        margin: 0 auto;
+    }
+
+    .portfolio-container {
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+
+
+    }
+
     .skills .container .row {
 
         grid-template-columns: repeat(6, 1fr);
 
     }
-
 
 }
