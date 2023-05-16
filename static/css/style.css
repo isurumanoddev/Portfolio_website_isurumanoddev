@@ -170,32 +170,7 @@ strong {
     }
 }
 
-#user-container {
 
-    display: flex;
-    gap: 2rem;
-        font-size: 1rem;
-
-    position: fixed;
-    text-align: center;
-    top: 4.5rem;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 22, 0.9);
-
-    justify-content: center;
-    margin: 0 auto;
-    z-index: 10;
-    font-weight: 600;
-    height: 2rem;
-    padding: 0.5rem;
-
-
-    color: #fdfff0;
-}
-#user-container {
-
-}
 .credential {
     color: #d0c90b;
 }
