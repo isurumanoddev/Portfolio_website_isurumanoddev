@@ -28,7 +28,7 @@ class ContactForm(ModelForm):
         self.fields["name"].widget.attrs.update({'class':'input'})
         self.fields["email"].widget.attrs.update({'class':'input'})
         self.fields["subject"].widget.attrs.update({'class':'input'})
-        self.fields["body"].widget.attrs.update({'class':'textarea'})
+        self.fields["Message"].widget.attrs.update({'class':'textarea'})
 
 class SkillForm(ModelForm):
     class Meta:
