@@ -99,3 +99,15 @@ def contact_form(request):
     return render(request, "contact_form.html", context)
 
 
+def process_message(request):
+    data = json.loads(request.body)
+    print(data)
+    print(data["contactData"]["name"])
+
+    Messages.objects.create(
+        name=data["contactData"]["name"],
+        email=data["contactData"]["email"],
+        subject=data["contactData"]["subject"],
+        Message=data["contactData"]["Message"],
+    )
+    return JsonResponse("message send complete", safe=False)
