@@ -395,15 +395,22 @@
             messageContainer.style.display = "block";
 
             // Apply the fade-in effect
-            messageContainer.classList.add("fade-out");
+            {#messageContainer.classList.add("fade-in");#}
+
+            // Wait for 2 seconds and then apply the fade-out effect
+            setTimeout(function () {
+                messageContainer.classList.remove("fade-in");
+                messageContainer.classList.add("fade-out");
+                 window.location.reload();
+            }, 3000);
+
 
             // Reload the page after 4 seconds
-            setTimeout(function () {
-                window.location.reload();
-            }, 2000);
 
         }
     </script>
+
+
 
 
 
