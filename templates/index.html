@@ -356,20 +356,35 @@
                     </div>
 
                 </div>
-                <form method="POST" action="" class="contact-form" onclick="displayMessage(event)">
+                <form id="contact-form" method="POST" action="" class="contact-form">
                     {% csrf_token %}
 
                     <div class="contact-inputs">
 
-                        {% for field in form %}
-                            <div class="contact-content">
-                                <label class="label">{{ field.label }}</label>
-                                {{ field }}
-                            </div>
-                        {% endfor %}
-
+                        {#                        {% for field in form %}#}
+                        {#                            <div class="contact-content">#}
+                        {#                                <label class="label">{{ field.label }}</label>#}
+                        {#                                {{ field }}#}
+                        {#                            </div>#}
+                        {#                        {% endfor %}#}
+                        <div class="contact-content">
+                            <label class="label">Name</label>
+                            <input type="text" class="input" name="name">
+                        </div>
+                        <div class="contact-content">
+                            <label class="label">Email</label>
+                            <input type="text" class="input" name="email">
+                        </div>
+                        <div class="contact-content">
+                            <label class="label">Subject</label>
+                            <input type="text" class="input" name="subject">
+                        </div>
+                        <div class="contact-content">
+                            <label class="label">Message</label>
+                            <input type="text" class="input" name="Message">
+                        </div>
                         <div>
-                            <button type="submit" class="glass-button" >Cantact Me
+                            <button type="submit" class="glass-button">Cantact Me
                                 <i class="uil uil-message"></i>
                             </button>
                         </div>
@@ -417,45 +432,84 @@
     {#        }#}
     {#    </script>#}
     <script>
-        function displayMessage(event) {
-            event.preventDefault();
-            const formElement = document.querySelector('.contact-form');
+        const contactForm = document.getElementById('contact-form');
 
 
-            const formData = new FormData(formElement);
+        {#const formElement = document.querySelectorAll('.input');#}
+
+
+        contactForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            console.log("form-submitted")
+            submitFormData()
+
+
+        });
+
+        function submitFormData() {
+            const contactData = {
+                "name": null,
+                "email": null,
+                "subject": null,
+                "Message": null,
+
+            }
+
+            contactData.name = contactForm.name.value
+            contactData.email = contactForm.email.value
+            contactData.subject = contactForm.subject.value
+            contactData.Message = contactForm.Message.value
+
 
             const url = "/contact_form/"
-
-
-
-
             fetch(url, {
-                method: 'POST',
-                 headers: {
+                method: "POST",
+                headers: {
                     "Content-Type": "application/json",
                     "X-CSRFToken": csrftoken,
                 },
-                body: JSON.stringify(formData)
+                body: JSON.stringify({"contactData": contactData})
+            }).then(response => {
+                response.json()
+            }).then(data => {
+                console.log("data : ", data)
+                const messageContainer = document.getElementById("message-container");
+                messageContainer.style.display = "block";
+
+                // Apply the fade-in effect
+                messageContainer.classList.add("fade-in");
+
+                // Wait for 2 seconds and then apply the fade-out effect
+                setTimeout(function () {
+                    messageContainer.classList.remove("fade-in");
+                    messageContainer.classList.add("fade-out");
+                    window.location.reload();
+                }, 3000);
+
+
+
             })
-                .then(response => {
-                    // Handle the response from the backend
-                    if (response.ok) {
-                        // Display a success message or perform any other actions
-                        document.getElementById('message').textContent = 'Form submitted successfully.';
-                    } else {
-                        // Display an error message or perform any other actions
-                        document.getElementById('message').textContent = 'Form submission failed.';
-                    }
-                })
-                .catch(error => {
-                    // Handle any error that occurred during the fetch request
-                    document.getElementById('message').textContent = 'An error occurred.';
-                    console.error(error);
-                });
         }
 
-    </script>
 
+    </script>
+    <script>
+        function submitted() {
+            {#alert("Transaction Completed");#}
+            const messageContainer = document.getElementById("message-container");
+            messageContainer.style.display = "block";
+
+            // Apply the fade-in effect
+            messageContainer.classList.add("fade-in");
+
+            // Wait for 2 seconds and then apply the fade-out effect
+            setTimeout(function () {
+                messageContainer.classList.remove("fade-in");
+                messageContainer.classList.add("fade-out");
+
+            }, 2000);
+        }
+    </script>
 
 
 
