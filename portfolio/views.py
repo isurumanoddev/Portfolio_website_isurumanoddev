@@ -34,6 +34,13 @@ def projects(request):
 def project_page(request, pk):
     project = Projects.objects.get(id=pk)
     comments = project.comments_set.all()
+    if request.method == "POST":
+        Comments.objects.create(
+            project=project,
+            name="",
+            body=request.POST.get("comment")
+        )
+        return redirect("project-page",pk=project.id)
     context = {"project": project,"comments":comments}
     return render(request, "project_page.html", context)
 
