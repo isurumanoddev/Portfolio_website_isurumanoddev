@@ -3,26 +3,32 @@
 {% load static %}
 
 {% block content %}
- <section class="portfolio section" id="portfolio">
+    <section class="portfolio section" id="portfolio">
+        <div class="back-container">
+
+            <a id="down-arrow" href="{% url "home" %}" class="button-2 show-more-button">
+                <i class="uil uil-arrow-circle-left arrow-right"></i> Back to home
+            </a>
+        </div>
         <h2 class="section-title">Portfolio</h2>
         <span class="section-subtitle">Most recent Work</span>
 
         <div class="portfolio-container container">
-{% for project in projects %}
-            <div class="portfolio-content">
-                <img src="{{ project.imageURL }}" class="project-img">
-                <div class="project-data">
-                    <h3 class="project-title">{{ project.title }}</h3>
-                    <p class="project-desc">{{ project.body }}</p>
-                    <div class="button-container">
-                        <a href="#" class="button-2"> Show More<i
-                                class="uil uil-arrow-circle-right button-icon"></i></a>
-                        <a href="{{ project.github_link }}" class="button-2">Github<i
-                                class="uil uil-github button-icon"></i> </a>
+            {% for project in projects %}
+                <div class="portfolio-content">
+                    <img src="{{ project.imageURL }}" class="project-img">
+                    <div class="project-data">
+                        <h3 class="project-title">{{ project.title }}</h3>
+                        <p class="project-desc">{{ project.body }}</p>
+                        <div class="button-container">
+                            <a href="{% url "project-page" project.id %}" class="button-2"> Show More<i
+                                    class="uil uil-arrow-circle-right button-icon"></i></a>
+                            <a href="{{ project.github_link }}" class="button-2">Github<i
+                                    class="uil uil-github button-icon"></i> </a>
+                        </div>
                     </div>
                 </div>
-            </div>
- {% endfor %}
+            {% endfor %}
         </div>
 
     </section>

@@ -33,7 +33,8 @@ def projects(request):
 
 def project_page(request, pk):
     project = Projects.objects.get(id=pk)
-    context = {"project": project}
+    comments = project.comments_set.all()
+    context = {"project": project,"comments":comments}
     return render(request, "project_page.html", context)
 
 

@@ -389,6 +389,7 @@ header {
     min-height: 90vh;
     /*background: linear-gradient(to bottom, #57059e, #4a00e0);*/
     background: linear-gradient(to left, #57059e, #4a00e0);
+    color: #fff;
 }
 
 /* *********************************Home *************************/
@@ -851,6 +852,12 @@ header {
     text-align: center;
     margin-top: 2rem;
 }
+.back-container {
+    display: flex;
+    justify-content: flex-start;
+
+    margin-top: 2rem;
+}
 
 /*======================================== service ++++==============*/
 
@@ -1229,8 +1236,26 @@ header {
 /*===========================================================*/
 /*===========================================================*/
 /*===========================================================*/
+
+.project-page-section {
+    min-height: 90vh;
+    /*background: linear-gradient(to bottom, #57059e, #4a00e0);*/
+    background: linear-gradient(to left, #57059e, #4a00e0);
+
+}
 .project-page-container {
-    margin: 7rem 8rem;
+
+      gap: 16px;
+    /*background: #f30a0a;*/
+    background: rgba(0, 0, 22, 0.4);
+
+    color: #fff;
+    border-radius: 1rem;
+    padding: 6rem 2rem;
+    width: 80%;
+    margin: auto;
+
+    margin-bottom: 2rem;
 }
 
 .project-img-container {
@@ -1241,10 +1266,20 @@ header {
 }
 
 #project-img {
-    width: 60%;
-    height: 50vh;
-    object-fit: cover;
+    width: 80%;
+    height: 60vh;
+    object-fit: fill;
+    border-radius: 1rem;
 }
+.comment-container {
+    background: #4d064d;
+    padding:2rem;
+    border-radius: 1rem;
+}
+.comment-container input{
+
+}
+
 
 /*====================*/
 /*====================*/
