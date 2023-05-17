@@ -183,11 +183,11 @@
                             <h3 class="project-title">{{ project.title }}</h3>
                             <p class="project-desc">{{ project.body }}</p>
                             <div class="button-container">
-                                <button class="button-2"> Show More<i
-                                        class="uil uil-arrow-circle-right button-icon"></i></button>
-                                <a href="{{ project.github_link }}" class="button-2">Github<i
-                                        class="uil uil-github button-icon"></i> </a>
-                            </div>
+                            <a href="{% url "project-page" project.id %}" class="button-2"> Show More<i
+                                    class="uil uil-arrow-circle-right button-icon"></i></a>
+                            <a href="{{ project.github_link }}" class="button-2">Github<i
+                                    class="uil uil-github button-icon"></i> </a>
+                        </div>
                         </div>
                     </div>
                 {% endfor %}

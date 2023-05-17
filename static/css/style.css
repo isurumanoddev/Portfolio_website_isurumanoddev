@@ -222,6 +222,57 @@ strong {
 .button-2:hover {
     background-color: rgba(255, 255, 255, 0.35);
 }
+.back-button {
+
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 12px;
+
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+.back-button:hover {
+    background-color: rgba(255, 255, 255, 0.35);
+}
+.show-more-button {
+    /*background: var(--first-color) !important;*/
+    font-size: 1rem !important;
+    margin: 0 auto !important;
+    width: max-content !important;
+
+
+    padding: 4px 24px;
+    border: 0;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(30px);
+    color: rgba(255, 255, 255, 0.95);
+
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.show-more-button:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
 
 main {
     margin: 0;
@@ -813,32 +864,7 @@ header {
     /*min-width: 110px;*/
 }
 
-.show-more-button {
-    /*background: var(--first-color) !important;*/
-    font-size: 1rem !important;
-    margin: 0 auto !important;
-    width: max-content !important;
 
-
-    padding: 4px 24px;
-    border: 0;
-    text-decoration: none;
-    border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.5) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-    backdrop-filter: blur(30px);
-    color: rgba(255, 255, 255, 0.95);
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: 0.4s;
-}
-
-.show-more-button:hover {
-    background-color: rgba(255, 255, 255, 0.1) !important;
-}
 
 .arrow-right {
     font-size: 2rem;
@@ -852,11 +878,12 @@ header {
     text-align: center;
     margin-top: 2rem;
 }
-.back-container {
-    display: flex;
-    justify-content: flex-start;
+#back-container {
+    display: flex!important;
+    justify-content: flex-start!important;
 
     margin-top: 2rem;
+    margin-left: 1rem;
 }
 
 /*======================================== service ++++==============*/
